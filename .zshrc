@@ -17,32 +17,26 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 setopt COMPLETE_ALIASES
 
 # End of lines added by compinstall
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(zoxide init zsh)"
-source <(/usr/bin/starship init zsh --print-full-init)
+source <(/usr/local/bin/starship init zsh --print-full-init)
 
 # Aliases
 alias v="nvim"
-alias sv="EDITOR=nvim sudo -e"
+alias sv="EDITOR=nvim doasedit"
 alias clock="tty-clock -Bct"
 alias ls="exa -lah"
 alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i"
 
 # Keybinds
 
-export PATH="$PATH:/usr/local/i386elfgcc/bin"
 export PATH="$PATH:/home/soybean44/.local/bin/"
 export PATH="$PATH:/home/soybean44/.cargo/bin/"
-export PATH="/home/testuser/bin:$PATH"
-export DOCKER_HOST="unix:///run/user/1000/docker.sock"
+export PATH="$PATH:/home/soybean44/Programs/zig/"
+export PATH="$PATH:/sbin/"
 
 # Conda
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
-
-# init hyprland on login
-#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then 
-#  exec wrappedhl &>/dev/null 
-#fi
 
 # init dwm on login
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then 
