@@ -32,7 +32,7 @@ alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i
 bindkey -s '^f' 'zellij-sessionizer\n'
 
 export PATH="$PATH:/home/soybean44/.local/bin/"
-export PATH="$PATH:/home/soybean44/scripts/"
+export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
 export PATH="$PATH:/home/soybean44/.cargo/bin/"
 export PATH="$PATH:/home/soybean44/Programs/zig/"
 export PATH="$PATH:/sbin/"
