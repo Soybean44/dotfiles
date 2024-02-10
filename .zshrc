@@ -17,9 +17,9 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 setopt COMPLETE_ALIASES
 
 # End of lines added by compinstall
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(zoxide init zsh)"
-source <(/usr/local/bin/starship init zsh --print-full-init)
+source <(/usr/bin/starship init zsh --print-full-init)
 
 # Aliases
 alias v="nvim"
