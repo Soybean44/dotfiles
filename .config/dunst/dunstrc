@@ -1,6 +1,8 @@
 [global]
 frame_color = "#89B4FA"
 separator_color= frame
+scale = 0
+width=(0,500)
 
 [urgency_low]
 background = "#1E1E2E"

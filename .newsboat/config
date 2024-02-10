@@ -1,6 +1,7 @@
 # general settings
 auto-reload yes
 max-items 50
+download-full-page yes
 
 # externel browser
 browser "/bin/thorium-browser %u"
