@@ -29,7 +29,7 @@ alias ls="exa -lah"
 alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i"
 
 # Keybinds
-bindkey -s '^f' 'zellij-sessionizer\n'
+bindkey -s '^f' 'tmux-sessionizer\n'
 
 export PATH="$PATH:/home/soybean44/.local/bin/"
 export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
