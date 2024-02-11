@@ -29,6 +29,7 @@ alias ls="exa -lah"
 alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i"
 
 # Keybinds
+bindkey -r '^R'
 bindkey -s '^f' 'tmux new-session "tmux-sessionizer"\n'
 
 export PATH="$PATH:/home/soybean44/.local/bin/"
