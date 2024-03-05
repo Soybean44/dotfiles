@@ -1,0 +1,94 @@
+#!/usr/bin/python3
+"""
+This script is a modified version of the script torrentcli (https://github.com/amogusussy/torrentCLI/blob/main/torrentcli)
+it plays using peerflix which can be installed using `npm i -g peerflix`
+if the app stops working, go into the instances.json file in `get_instances()` and look for a new link that works
+"""
+import requests
+import sys
+import subprocess
+import json
+
+
+class bg:
+    PINK = "\033[95m"
+    BLUE = "\033[94m"
+    CYAN = "\033[96m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RED = "\033[91m"
+    NORM = "\033[0m"
+
+
+def get_instances():
+    instances = list()
+    instances_json = requests.get(
+        "https://raw.githubusercontent.com/Ahwxorg/LibreY/main/instances.json"
+    ).content
+    tmp = json.loads(instances_json)
+
+    for i in tmp["instances"]:
+        instances.append(i["clearnet"])
+
+    return instances
+
+
+def main():
+    if len(sys.argv) == 1:
+        sys.exit("Please rerun the command in the format: \n ~ $ tcli movie name")
+    args = sys.argv[1:].copy()
+
+    for i in args:
+        if "-" in i:
+            args.remove(i)
+    search = ("+".join(args)).replace(" ", "+")
+    # sites = ["librex.extravi.dev", "librex.beparanoid.de", "search.davidovski.xyz", "search.funami.tech", "search.madreyk.xyz", "librex.catalyst.sx"]
+    # sites = get_instances()
+    # site = random.choice(sites)
+    site = "https://ly.owo.si/"
+    URL = f"{site}api.php?q={search}&p=0&t=3"
+    data = requests.get(url=URL)
+    data = data.json()
+
+    numberOfOutputs = 8
+    torrentStream = "peerflix"
+
+    def output(a):
+        for i in range(a):
+            torrent = data[i]
+            if torrent["seeders"] != 0:
+                name = str(torrent["name"])
+                seeders = str(torrent["seeders"])
+                leechers = str(torrent["leechers"])
+                size = str(torrent["size"])
+                source = str(torrent["source"])
+                print(
+                    f"[{i + 1}]{bg.RED} {name} \n ---{bg.GREEN} [se] {seeders} {bg.PINK} [le] {leechers} {bg.BLUE} [size] {size} {bg.YELLOW} [src] {source} {bg.NORM}"
+                )
+
+    if len(data) < numberOfOutputs:
+        a = len(data)
+    else:
+        a = numberOfOutputs
+    output(a)
+
+    try:
+        x = int(input("Which torrent would you like? ")) - 1
+    except ValueError:
+        print("Please enter a number between 1 and ")
+
+    if "1337x" in data[x]["source"]:
+        re = str(f"{site}{data[x]['magnet'][1:]}")
+        magnet = requests.get(re, allow_redirects=False).headers["location"]
+    else:
+        magnet = data[x]["magnet"]
+
+    print(magnet)
+
+    subprocess.run([torrentStream, magnet])
+
+
+try:
+    main()
+except KeyboardInterrupt:
+    print("Exiting...")
