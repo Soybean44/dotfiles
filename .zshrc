@@ -23,6 +23,7 @@ source <(/usr/bin/starship init zsh --print-full-init)
 
 # Aliases
 alias v="nvim"
+alias pyscratch="nvim -c ':set filetype=python'"
 alias sv="EDITOR=nvim sudo -e"
 alias clock="tty-clock -Bct"
 alias ls="exa -lah"
