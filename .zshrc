@@ -38,7 +38,9 @@ export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
 export PATH="$PATH:/home/soybean44/.cargo/bin/"
 export PATH="$PATH:/home/soybean44/Programs/zig/"
 export PATH="$PATH:/sbin/"
+export PATH=$PATH:~/.modular/pkg/packages.modular.com_mojo/bin/
 
+export MODULAR_HOME="/home/soybean44/.modular"
 # Conda
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
@@ -46,3 +48,4 @@ export PATH="$PATH:/sbin/"
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then 
   startx
 fi
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib/mojo
