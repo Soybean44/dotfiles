@@ -41,6 +41,7 @@ export PATH="$PATH:/sbin/"
 export PATH=$PATH:~/.modular/pkg/packages.modular.com_mojo/bin/
 
 export EDITOR=nvim
+export RESTART_XOCHITL_DEFAULT=1
 export MODULAR_HOME="/home/soybean44/.modular"
 # Conda
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
