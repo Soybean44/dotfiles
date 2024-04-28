@@ -20,6 +20,7 @@ setopt COMPLETE_ALIASES
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(zoxide init zsh)"
 source <(/usr/bin/starship init zsh --print-full-init)
+source /etc/profile.d/emscripten.sh
 
 # Aliases
 alias v="nvim"
