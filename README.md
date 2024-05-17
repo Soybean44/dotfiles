@@ -8,5 +8,3 @@ To add the dotfiles to a computer, install the gnu stow package and run `stow .`
 If you mess this up run the following command:
 `git submodule update --init --recursive`
 
-## Tmux
-for the tmux config, make sure to install tmux package manager in the usual sense, this cannot be automated due to the nature of how it works
