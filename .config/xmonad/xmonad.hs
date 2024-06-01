@@ -6,6 +6,8 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Config.Desktop
 import XMonad.Hooks.StatusBar
 import XMonad.Hooks.StatusBar.PP
+import XMonad.Actions.WindowGo
+import XMonad.Util.EZConfig (additionalKeysP)
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -27,7 +29,7 @@ myBorderWidth   = 2
 myModMask       = mod4Mask
 
 
-myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
+myWorkspaces    = ["1","2","3","4","5","6","7","8","9","10"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
@@ -37,80 +39,42 @@ myFocusedBorderColor = "#91b4fa"
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
 --
+myAditionalKeys :: [(String, X ())]
+myAditionalKeys =
+
+    -- apps
+  [ ("M-t", spawn myTerminal)
+  , ("M-b", spawn "firefox")
+  , ("M-d", spawn "~/.config/rofi/bin/launcher")
+  , ("M-q", kill)
+
+  -- window controls
+  , ("M-j", windows W.focusDown)
+  , ("M-k", windows W.focusUp)
+  , ("M-h", windows W.focusMaster)
+  , ("M-l", windows W.focusDown)
+  , ("M-S-l", windows W.swapDown)
+  , ("M-S-j", windows W.swapDown)
+  , ("M-S-k", windows W.swapUp)
+  , ("M-S-h", windows W.swapMaster)
+  , ("M-C-h", sendMessage Shrink)
+  , ("M-C-l", sendMessage Expand)
+  , ("M-S-t", withFocused $ windows . W.sink)
+  , ("M-comma", sendMessage $ IncMasterN 1)
+  , ("M-period", sendMessage $ IncMasterN (-1))
+
+  -- layout controls
+  , ("M-<Space>", sendMessage NextLayout)
+
+  -- kill / restart xmonad
+  , ("M-S-q", spawn "killall xmobar; xmonad --recompile; xmonad --restart")
+  , ("M-S-<Esc>", spawn "shutdown now")
+
+  ]
+
+
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
-
-    -- launch a terminal
-    [ ((modm,               xK_t     ), spawn $ XMonad.terminal conf)
-
-    -- launch rofi
-    , ((modm,               xK_d     ), spawn "~/.config/rofi/bin/launcher")
-
-    -- launch gmrun
-    , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
-    --
-    -- launch browser
-    , ((modm,               xK_b     ), spawn "firefox")
-
-    -- close focused window
-    , ((modm              , xK_q     ), kill)
-
-     -- Rotate through the available layout algorithms
-    , ((modm,               xK_space ), sendMessage NextLayout)
-
-    --  Reset the layouts on the current workspace to default
-    , ((modm .|. shiftMask, xK_space ), setLayout $ XMonad.layoutHook conf)
-
-    -- Resize viewed windows to the correct size
-    , ((modm,               xK_n     ), refresh)
-
-    -- Move focus to the next window
-    , ((modm,               xK_Tab   ), windows W.focusDown)
-
-    -- Move focus to the next window
-    , ((modm,               xK_j     ), windows W.focusDown)
-
-    -- Move focus to the previous window
-    , ((modm,               xK_k     ), windows W.focusUp  )
-
-    -- Move focus to the master window
-    , ((modm,               xK_m     ), windows W.focusMaster  )
-
-    -- Swap the focused window and the master window
-    , ((modm,               xK_Return), windows W.swapMaster)
-
-    -- Swap the focused window with the next window
-    , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
-
-    -- Swap the focused window with the previous window
-    , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    )
-
-    -- Shrink the master area
-    , ((modm,               xK_h     ), sendMessage Shrink)
-
-    -- Expand the master area
-    , ((modm,               xK_l     ), sendMessage Expand)
-
-    -- Push window back into tiling
-    , ((modm .|. shiftMask, xK_t     ), withFocused $ windows . W.sink)
-
-    -- Increment the number of windows in the master area
-    , ((modm              , xK_comma ), sendMessage (IncMasterN 1))
-
-    -- Deincrement the number of windows in the master area
-    , ((modm              , xK_period), sendMessage (IncMasterN (-1)))
-
-    -- Toggle the status bar gap
-    -- Use this binding with avoidStruts from Hooks.ManageDocks.
-    -- See also the statusBar function from Hooks.DynamicLog.
-    --
-    -- , ((modm              , xK_b     ), sendMessage ToggleStruts)
-
-    -- Quit xmonad
-    , ((modm .|. shiftMask, xK_Escape     ), spawn "shutdown now")
-
-    -- Restart xmonad
-    , ((modm .|. shiftMask, xK_q     ), spawn "xmonad --recompile; xmonad --restart")
-    ]
+    []
     ++
 
     --
@@ -252,7 +216,7 @@ myStartupHook = return ()
 myPP = xmobarPP 
    { ppCurrent = xmobarColor "#89b4fa" ""
    , ppVisible = xmobarColor "#cdd6f4" ""
-   , ppVisibleNoWindows = Just (xmobarColor "#cdd6f4" "")
+   , ppVisibleNoWindows = Just(xmobarColor "#cdd6f4" "")
    , ppUrgent = xmobarColor "#f38ba8" ""
    }
 mySBL = statusBarPropTo "_XMONAD_LOG_0" "xmobar -x 0 ~/.config/xmonad/barL.hs" $ pure (marshallPP (S 0) $ myPP)
@@ -263,7 +227,7 @@ mySBR = statusBarPropTo "_XMONAD_LOG_1" "xmobar -x 1 ~/.config/xmonad/barR.hs" $
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
-main = xmonad $ withEasySB (mySBL <> mySBR) defToggleStrutsKey defaults
+main = xmonad $ withEasySB (mySBL <> mySBR) defToggleStrutsKey defaults  `additionalKeysP` myAditionalKeys
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will

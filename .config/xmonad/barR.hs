@@ -17,16 +17,11 @@ Config {
    , allDesktops = True
    , overrideRedirect = True
    , commands = [ Run UnsafeXPropertyLog "_XMONAD_LOG_1"
-                , Run Weather "EGPF" ["-t", "<station>: <tempC>C",
-                                      "-L", "18", "-H", "25",
-                                      "--normal", "green",
-                                      "--high", "red",
-                                      "--low", "lightblue"] 36000
                 , Run Cpu ["-L", "3", "-H", "50",
                            "--normal", "green", "--high", "red"] 10
                 , Run Date "%I:%M%p" "date" 10
                 ]
    , sepChar = "%"
    , alignSep = "}{"
-   , template = "%_XMONAD_LOG_1%}{%cpu% | %EGPF% | %date% "
+   , template = "%_XMONAD_LOG_1% }{%cpu% | %date% "
    }
