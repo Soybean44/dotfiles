@@ -20,8 +20,9 @@ Config {
                 , Run Cpu ["-L", "3", "-H", "50",
                            "--normal", "green", "--high", "red"] 10
                 , Run Date "%I:%M%p" "date" 10
+                , Run XPropertyLog "_XMONAD_TRAYPAD"
                 ]
    , sepChar = "%"
    , alignSep = "}{"
-   , template = "%_XMONAD_LOG_0% }{%cpu% | %date% "
+   , template = "%_XMONAD_LOG_0% }{%cpu% | %date% %_XMONAD_TRAYPAD%"
    }

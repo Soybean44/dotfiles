@@ -9,6 +9,7 @@ import XMonad.Hooks.StatusBar.PP
 import XMonad.Actions.WindowGo
 import XMonad.Util.EZConfig (additionalKeysP)
 
+import qualified XMonad.Util.Hacks as Hacks
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
@@ -254,7 +255,9 @@ defaults = desktopConfig {
       -- hooks, layouts
         layoutHook         = myLayout,
         manageHook         = myManageHook,
-        handleEventHook    = myEventHook,
+        handleEventHook    = myEventHook <> Hacks.trayerPaddingXmobarEventHook, 
+        -- This is the tray command install trayer-srg-git from the aur 
+        -- trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --widthtype request --transparent true --alpha 0 --height 26 --tint 0x1e1e2e & 
         logHook            = myLogHook,
         startupHook        = myStartupHook
     }
