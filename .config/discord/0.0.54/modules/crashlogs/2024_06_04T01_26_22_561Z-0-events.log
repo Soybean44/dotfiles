@@ -1,0 +1,205 @@
+2024-06-04T01:26:22.571Z 0: 
+
+----------------------------------------------
+2024-06-04T01:26:22.582Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T01:26:22.588Z 2: ✅ webContents.created web1 ""
+2024-06-04T01:26:22.594Z 3: ✅ window.created win1 "discord"
+2024-06-04T01:26:22.790Z 4: ✅ webContents.did-finish-load web1
+2024-06-04T01:26:30.517Z 5: ✅ webContents.created web2 ""
+2024-06-04T01:26:30.529Z 6: ✅ window.created win2 "Discord"
+2024-06-04T01:26:31.916Z 7: ✅ webContents.did-finish-load web2
+2024-06-04T01:26:32.016Z 8: window.close win1
+2024-06-04T01:26:32.025Z 9: webContents.destroyed web1
+2024-06-04T01:26:32.030Z 10: window.closed win1
+2024-06-04T01:26:58.746Z 11: before-quit
+2024-06-04T01:33:39.506Z 0: 
+
+----------------------------------------------
+2024-06-04T01:33:39.534Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T01:33:39.539Z 2: ✅ webContents.created web1 ""
+2024-06-04T01:33:39.544Z 3: ✅ window.created win1 "discord"
+2024-06-04T01:33:39.736Z 4: ✅ webContents.did-finish-load web1
+2024-06-04T01:33:40.055Z 5: ✅ webContents.created web2 ""
+2024-06-04T01:33:40.065Z 6: ✅ window.created win2 "Discord"
+2024-06-04T01:33:42.179Z 7: ✅ webContents.did-finish-load web2
+2024-06-04T01:33:42.278Z 8: window.close win1
+2024-06-04T01:33:42.289Z 9: webContents.destroyed web1
+2024-06-04T01:33:42.294Z 10: window.closed win1
+2024-06-04T01:34:43.075Z 11: window.close win2
+2024-06-04T01:34:59.353Z 0: 
+
+----------------------------------------------
+2024-06-04T01:34:59.368Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T01:35:01.508Z 12: window.close win2
+2024-06-04T01:35:05.092Z 13: before-quit
+2024-06-04T01:35:05.113Z 14: window.close win2
+2024-06-04T01:35:05.124Z 15: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'audio.mojom.AudioService',
+  name: 'Audio Service'
+}
+2024-06-04T01:35:08.777Z 0: 
+
+----------------------------------------------
+2024-06-04T01:35:08.803Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T01:35:08.807Z 2: ✅ webContents.created web1 ""
+2024-06-04T01:35:08.811Z 3: ✅ window.created win1 "discord"
+2024-06-04T01:35:09.017Z 4: ✅ webContents.did-finish-load web1
+2024-06-04T01:35:09.309Z 5: ✅ webContents.created web2 ""
+2024-06-04T01:35:09.321Z 6: ✅ window.created win2 "Discord"
+2024-06-04T01:35:11.041Z 7: ✅ webContents.did-finish-load web2
+2024-06-04T01:35:11.141Z 8: window.close win1
+2024-06-04T01:35:11.151Z 9: webContents.destroyed web1
+2024-06-04T01:35:11.158Z 10: window.closed win1
+2024-06-04T02:06:04.871Z 11: window.close win2
+2024-06-04T02:06:07.525Z 0: 
+
+----------------------------------------------
+2024-06-04T02:06:07.546Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T02:06:08.167Z 12: window.close win2
+2024-06-04T02:06:11.680Z 13: before-quit
+2024-06-04T02:06:11.700Z 14: window.close win2
+2024-06-04T02:06:11.706Z 15: ❌ child-process-gone {
+  type: 'Utility',
+  reason: 'killed',
+  exitCode: 15,
+  serviceName: 'network.mojom.NetworkService',
+  name: 'Network Service'
+}
+2024-06-04T02:06:14.343Z 0: 
+
+----------------------------------------------
+2024-06-04T02:06:14.367Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T02:06:14.371Z 2: ✅ webContents.created web1 ""
+2024-06-04T02:06:14.375Z 3: ✅ window.created win1 "discord"
+2024-06-04T02:06:14.543Z 4: ✅ webContents.did-finish-load web1
+2024-06-04T02:06:14.839Z 5: ✅ webContents.created web2 ""
+2024-06-04T02:06:14.849Z 6: ✅ window.created win2 "Discord"
+2024-06-04T02:06:16.617Z 7: ✅ webContents.did-finish-load web2
+2024-06-04T02:06:16.717Z 8: window.close win1
+2024-06-04T02:06:16.726Z 9: webContents.destroyed web1
+2024-06-04T02:06:16.729Z 10: window.closed win1
+2024-06-04T03:36:04.229Z 11: before-quit
+2024-06-04T03:36:04.236Z 12: window.close win2
+2024-06-04T19:01:48.611Z 0: 
+
+----------------------------------------------
+2024-06-04T19:01:48.636Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T19:01:48.640Z 2: ✅ webContents.created web1 ""
+2024-06-04T19:01:48.646Z 3: ✅ window.created win1 "discord"
+2024-06-04T19:01:48.837Z 4: ✅ webContents.did-finish-load web1
+2024-06-04T19:01:49.160Z 5: ✅ webContents.created web2 ""
+2024-06-04T19:01:49.169Z 6: ✅ window.created win2 "Discord"
+2024-06-04T19:01:51.033Z 7: ✅ webContents.did-finish-load web2
+2024-06-04T19:01:51.133Z 8: window.close win1
+2024-06-04T19:01:51.140Z 9: webContents.destroyed web1
+2024-06-04T19:01:51.144Z 10: window.closed win1
+2024-06-04T19:02:04.556Z 11: window.close win2
+2024-06-04T19:04:21.072Z 0: 
+
+----------------------------------------------
+2024-06-04T19:04:21.080Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T22:42:19.325Z 12: before-quit
+2024-06-04T23:19:24.465Z 0: 
+
+----------------------------------------------
+2024-06-04T23:19:24.488Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T23:19:24.492Z 2: ✅ webContents.created web1 ""
+2024-06-04T23:19:24.496Z 3: ✅ window.created win1 "discord"
+2024-06-04T23:19:24.677Z 4: ✅ webContents.did-finish-load web1
+2024-06-04T23:19:36.552Z 5: window.close win1
+2024-06-04T23:20:39.994Z 0: 
+
+----------------------------------------------
+2024-06-04T23:20:40.018Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T23:20:40.022Z 2: ✅ webContents.created web1 ""
+2024-06-04T23:20:40.026Z 3: ✅ window.created win1 "discord"
+2024-06-04T23:20:40.235Z 4: ✅ webContents.did-finish-load web1
+2024-06-04T23:20:40.360Z 5: ✅ webContents.created web2 ""
+2024-06-04T23:20:40.372Z 6: ✅ window.created win2 "Discord"
+2024-06-04T23:20:42.416Z 7: ✅ webContents.did-finish-load web2
+2024-06-04T23:20:42.516Z 8: window.close win1
+2024-06-04T23:20:42.524Z 9: webContents.destroyed web1
+2024-06-04T23:20:42.529Z 10: window.closed win1
+2024-06-05T00:34:59.544Z 11: before-quit
+2024-06-05T02:26:12.182Z 0: 
+
+----------------------------------------------
+2024-06-05T02:26:12.205Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:26:12.209Z 2: ✅ webContents.created web1 ""
+2024-06-05T02:26:12.213Z 3: ✅ window.created win1 "discord"
+2024-06-05T02:26:12.419Z 4: ✅ webContents.did-finish-load web1
+2024-06-05T02:26:12.584Z 5: ✅ webContents.created web2 ""
+2024-06-05T02:26:12.596Z 6: ✅ window.created win2 "Discord"
+2024-06-05T02:26:14.521Z 7: ✅ webContents.did-finish-load web2
+2024-06-05T02:26:14.620Z 8: window.close win1
+2024-06-05T02:26:14.631Z 9: webContents.destroyed web1
+2024-06-05T02:26:14.636Z 10: window.closed win1
+2024-06-05T02:28:55.397Z 0: 
+
+----------------------------------------------
+2024-06-05T02:28:55.420Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:28:55.425Z 2: ✅ webContents.created web1 ""
+2024-06-05T02:28:55.428Z 3: ✅ window.created win1 "discord"
+2024-06-05T02:28:55.652Z 4: ✅ webContents.created web2 ""
+2024-06-05T02:28:55.666Z 5: ✅ window.created win2 "Discord"
+2024-06-05T02:28:55.681Z 6: ✅ webContents.did-finish-load web1
+2024-06-05T02:28:57.551Z 7: ✅ webContents.did-finish-load web2
+2024-06-05T02:28:57.650Z 8: window.close win1
+2024-06-05T02:28:57.660Z 9: webContents.destroyed web1
+2024-06-05T02:28:57.664Z 10: window.closed win1
+2024-06-05T02:30:35.782Z 0: 
+
+----------------------------------------------
+2024-06-05T02:30:35.809Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:30:35.814Z 2: ✅ webContents.created web1 ""
+2024-06-05T02:30:35.818Z 3: ✅ window.created win1 "discord"
+2024-06-05T02:30:36.017Z 4: ✅ webContents.did-finish-load web1
+2024-06-05T02:30:36.126Z 5: ✅ webContents.created web2 ""
+2024-06-05T02:30:36.138Z 6: ✅ window.created win2 "Discord"
+2024-06-05T02:30:37.887Z 7: ✅ webContents.did-finish-load web2
+2024-06-05T02:30:37.987Z 8: window.close win1
+2024-06-05T02:30:37.996Z 9: webContents.destroyed web1
+2024-06-05T02:30:38.000Z 10: window.closed win1
+2024-06-05T02:35:45.565Z 0: 
+
+----------------------------------------------
+2024-06-05T02:35:45.589Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:35:45.593Z 2: ✅ webContents.created web1 ""
+2024-06-05T02:35:45.597Z 3: ✅ window.created win1 "discord"
+2024-06-05T02:35:45.842Z 4: ✅ webContents.did-finish-load web1
+2024-06-05T02:35:46.101Z 5: ✅ webContents.created web2 ""
+2024-06-05T02:35:46.112Z 6: ✅ window.created win2 "Discord"
+2024-06-05T02:35:48.082Z 7: ✅ webContents.did-finish-load web2
+2024-06-05T02:35:48.182Z 8: window.close win1
+2024-06-05T02:35:48.191Z 9: webContents.destroyed web1
+2024-06-05T02:35:48.195Z 10: window.closed win1
+2024-06-05T02:44:57.039Z 0: 
+
+----------------------------------------------
+2024-06-05T02:44:57.068Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:44:57.073Z 2: ✅ webContents.created web1 ""
+2024-06-05T02:44:57.080Z 3: ✅ window.created win1 "discord"
+2024-06-05T02:44:57.369Z 4: ✅ webContents.did-finish-load web1
+2024-06-05T02:44:57.521Z 5: ✅ webContents.created web2 ""
+2024-06-05T02:44:57.530Z 6: ✅ window.created win2 "Discord"
+2024-06-05T02:44:59.551Z 7: ✅ webContents.did-finish-load web2
+2024-06-05T02:44:59.641Z 8: window.close win1
+2024-06-05T02:44:59.648Z 9: webContents.destroyed web1
+2024-06-05T02:44:59.652Z 10: window.closed win1
+2024-06-05T02:50:07.021Z 11: before-quit
+2024-06-05T21:53:55.890Z 0: 
+
+----------------------------------------------
+2024-06-05T21:53:55.915Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.54"}, modulepath: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T21:53:55.919Z 2: ✅ webContents.created web1 ""
+2024-06-05T21:53:55.923Z 3: ✅ window.created win1 "discord"
+2024-06-05T21:53:56.432Z 4: ✅ webContents.did-finish-load web1
+2024-06-05T21:53:56.568Z 5: ✅ webContents.created web2 ""
+2024-06-05T21:53:56.581Z 6: ✅ window.created win2 "Discord"
+2024-06-05T21:53:58.617Z 7: ✅ webContents.did-finish-load web2
+2024-06-05T21:53:58.717Z 8: window.close win1
+2024-06-05T21:53:58.723Z 9: webContents.destroyed web1
+2024-06-05T21:53:58.728Z 10: window.closed win1

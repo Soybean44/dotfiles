@@ -1,0 +1,899 @@
+2024-06-04T01:26:22.529Z [Modules] Modules initializing
+2024-06-04T01:26:22.529Z [Modules] Distribution: remote
+2024-06-04T01:26:22.529Z [Modules] Host updates: enabled
+2024-06-04T01:26:22.529Z [Modules] Module updates: enabled
+2024-06-04T01:26:22.529Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T01:26:22.530Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-04T01:26:22.530Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-04T01:26:22.700Z [Modules] Bootstrapping...
+2024-06-04T01:26:22.700Z [Modules] Installing discord_desktop_core@0 from /opt/discord/resources/bootstrap/discord_desktop_core.zip
+2024-06-04T01:26:22.704Z [Modules] Failed installing discord_desktop_core@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_desktop_core.zip'
+2024-06-04T01:26:22.705Z [Modules] Installing discord_erlpack@0 from /opt/discord/resources/bootstrap/discord_erlpack.zip
+2024-06-04T01:26:22.707Z [Modules] Failed installing discord_erlpack@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_erlpack.zip'
+2024-06-04T01:26:22.707Z [Modules] Installing discord_spellcheck@0 from /opt/discord/resources/bootstrap/discord_spellcheck.zip
+2024-06-04T01:26:22.708Z [Modules] Failed installing discord_spellcheck@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_spellcheck.zip'
+2024-06-04T01:26:22.708Z [Modules] Installing discord_utils@0 from /opt/discord/resources/bootstrap/discord_utils.zip
+2024-06-04T01:26:22.709Z [Modules] Failed installing discord_utils@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_utils.zip'
+2024-06-04T01:26:22.710Z [Modules] Installing discord_voice@0 from /opt/discord/resources/bootstrap/discord_voice.zip
+2024-06-04T01:26:22.710Z [Modules] Failed installing discord_voice@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_voice.zip'
+2024-06-04T01:26:22.711Z [Modules] Installing discord_zstd@0 from /opt/discord/resources/bootstrap/discord_zstd.zip
+2024-06-04T01:26:22.711Z [Modules] Failed installing discord_zstd@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_zstd.zip'
+2024-06-04T01:26:22.711Z [Modules] Finished module installations. [success: 0] [failure: 6]
+2024-06-04T01:26:22.712Z [Modules] Checking for host updates.
+2024-06-04T01:26:22.964Z [Modules] Host is up to date.
+2024-06-04T01:26:22.965Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T01:26:23.004Z [Modules] Module update available: discord_desktop_core@1 [installed: 0]
+2024-06-04T01:26:23.004Z [Modules] Module update available: discord_erlpack@1 [installed: 0]
+2024-06-04T01:26:23.005Z [Modules] Module update available: discord_spellcheck@1 [installed: 0]
+2024-06-04T01:26:23.005Z [Modules] Module update available: discord_utils@1 [installed: 0]
+2024-06-04T01:26:23.005Z [Modules] Module update available: discord_voice@3 [installed: 0]
+2024-06-04T01:26:23.006Z [Modules] Module update available: discord_zstd@1 [installed: 0]
+2024-06-04T01:26:23.008Z [Modules] Fetching discord_desktop_core@1 from https://discord.com/api/modules/stable/discord_desktop_core/1
+2024-06-04T01:26:23.008Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip
+2024-06-04T01:26:23.266Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 1%
+2024-06-04T01:26:23.283Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 2%
+2024-06-04T01:26:23.318Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 3%
+2024-06-04T01:26:23.341Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 4%
+2024-06-04T01:26:23.378Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 5%
+2024-06-04T01:26:23.402Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 6%
+2024-06-04T01:26:23.440Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 7%
+2024-06-04T01:26:23.462Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 8%
+2024-06-04T01:26:23.518Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 9%
+2024-06-04T01:26:23.540Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 10%
+2024-06-04T01:26:23.583Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 11%
+2024-06-04T01:26:23.638Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 12%
+2024-06-04T01:26:23.659Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 13%
+2024-06-04T01:26:23.676Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 14%
+2024-06-04T01:26:23.730Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 15%
+2024-06-04T01:26:23.742Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 16%
+2024-06-04T01:26:23.746Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 17%
+2024-06-04T01:26:23.772Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 18%
+2024-06-04T01:26:23.778Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 19%
+2024-06-04T01:26:23.819Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 20%
+2024-06-04T01:26:23.837Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 21%
+2024-06-04T01:26:23.861Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 22%
+2024-06-04T01:26:23.894Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 23%
+2024-06-04T01:26:23.919Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 24%
+2024-06-04T01:26:23.940Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 25%
+2024-06-04T01:26:23.974Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 26%
+2024-06-04T01:26:23.995Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 27%
+2024-06-04T01:26:24.020Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 28%
+2024-06-04T01:26:24.048Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 29%
+2024-06-04T01:26:24.065Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 30%
+2024-06-04T01:26:24.076Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 31%
+2024-06-04T01:26:24.118Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 32%
+2024-06-04T01:26:24.129Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 33%
+2024-06-04T01:26:24.144Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 34%
+2024-06-04T01:26:24.171Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 35%
+2024-06-04T01:26:24.173Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 36%
+2024-06-04T01:26:24.176Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 37%
+2024-06-04T01:26:24.193Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 38%
+2024-06-04T01:26:24.209Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 39%
+2024-06-04T01:26:24.240Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 40%
+2024-06-04T01:26:24.255Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 41%
+2024-06-04T01:26:24.263Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 42%
+2024-06-04T01:26:24.285Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 43%
+2024-06-04T01:26:24.294Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 44%
+2024-06-04T01:26:24.302Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 45%
+2024-06-04T01:26:24.315Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 46%
+2024-06-04T01:26:24.321Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 47%
+2024-06-04T01:26:24.331Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 48%
+2024-06-04T01:26:24.338Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 49%
+2024-06-04T01:26:24.345Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 50%
+2024-06-04T01:26:24.349Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 51%
+2024-06-04T01:26:24.361Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 52%
+2024-06-04T01:26:24.367Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 53%
+2024-06-04T01:26:24.372Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 54%
+2024-06-04T01:26:24.383Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 55%
+2024-06-04T01:26:24.387Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 56%
+2024-06-04T01:26:24.396Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 57%
+2024-06-04T01:26:24.404Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 58%
+2024-06-04T01:26:24.412Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 59%
+2024-06-04T01:26:24.416Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 60%
+2024-06-04T01:26:24.424Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 61%
+2024-06-04T01:26:24.428Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 62%
+2024-06-04T01:26:24.439Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 63%
+2024-06-04T01:26:24.444Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 64%
+2024-06-04T01:26:24.449Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 65%
+2024-06-04T01:26:24.454Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 66%
+2024-06-04T01:26:24.458Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 67%
+2024-06-04T01:26:24.462Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 68%
+2024-06-04T01:26:24.477Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 69%
+2024-06-04T01:26:24.479Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 70%
+2024-06-04T01:26:24.483Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 71%
+2024-06-04T01:26:24.490Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 72%
+2024-06-04T01:26:24.495Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 73%
+2024-06-04T01:26:24.498Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 74%
+2024-06-04T01:26:24.510Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 75%
+2024-06-04T01:26:24.514Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 76%
+2024-06-04T01:26:24.521Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 77%
+2024-06-04T01:26:24.523Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 78%
+2024-06-04T01:26:24.526Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 79%
+2024-06-04T01:26:24.535Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 80%
+2024-06-04T01:26:24.539Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 81%
+2024-06-04T01:26:24.543Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 82%
+2024-06-04T01:26:24.551Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 83%
+2024-06-04T01:26:24.554Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 84%
+2024-06-04T01:26:24.560Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 85%
+2024-06-04T01:26:24.566Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 86%
+2024-06-04T01:26:24.574Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 88%
+2024-06-04T01:26:24.578Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 89%
+2024-06-04T01:26:24.580Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 90%
+2024-06-04T01:26:24.584Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 91%
+2024-06-04T01:26:24.593Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 92%
+2024-06-04T01:26:24.597Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 93%
+2024-06-04T01:26:24.601Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 94%
+2024-06-04T01:26:24.604Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 95%
+2024-06-04T01:26:24.608Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 96%
+2024-06-04T01:26:24.612Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 97%
+2024-06-04T01:26:24.620Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 99%
+2024-06-04T01:26:24.622Z [Modules] Streaming discord_desktop_core@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip: 100%
+2024-06-04T01:26:24.625Z [Modules] Fetching discord_erlpack@1 from https://discord.com/api/modules/stable/discord_erlpack/1
+2024-06-04T01:26:24.625Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip
+2024-06-04T01:26:24.918Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 2%
+2024-06-04T01:26:24.927Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 3%
+2024-06-04T01:26:24.930Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 5%
+2024-06-04T01:26:24.933Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 6%
+2024-06-04T01:26:24.936Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 7%
+2024-06-04T01:26:24.940Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 8%
+2024-06-04T01:26:24.944Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 10%
+2024-06-04T01:26:24.950Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 11%
+2024-06-04T01:26:24.954Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 13%
+2024-06-04T01:26:24.956Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 14%
+2024-06-04T01:26:24.960Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 15%
+2024-06-04T01:26:24.964Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 16%
+2024-06-04T01:26:24.973Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 19%
+2024-06-04T01:26:24.976Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 20%
+2024-06-04T01:26:24.977Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 21%
+2024-06-04T01:26:24.985Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 22%
+2024-06-04T01:26:24.987Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 24%
+2024-06-04T01:26:24.991Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 25%
+2024-06-04T01:26:24.996Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 26%
+2024-06-04T01:26:24.999Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 27%
+2024-06-04T01:26:25.002Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 28%
+2024-06-04T01:26:25.004Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 29%
+2024-06-04T01:26:25.007Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 30%
+2024-06-04T01:26:25.008Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 31%
+2024-06-04T01:26:25.010Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 32%
+2024-06-04T01:26:25.015Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 33%
+2024-06-04T01:26:25.020Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 35%
+2024-06-04T01:26:25.023Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 36%
+2024-06-04T01:26:25.027Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 37%
+2024-06-04T01:26:25.032Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 40%
+2024-06-04T01:26:25.036Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 42%
+2024-06-04T01:26:25.041Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 43%
+2024-06-04T01:26:25.043Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 44%
+2024-06-04T01:26:25.045Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 45%
+2024-06-04T01:26:25.049Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 47%
+2024-06-04T01:26:25.051Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 48%
+2024-06-04T01:26:25.056Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 49%
+2024-06-04T01:26:25.057Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 50%
+2024-06-04T01:26:25.060Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 51%
+2024-06-04T01:26:25.066Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 53%
+2024-06-04T01:26:25.068Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 54%
+2024-06-04T01:26:25.073Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 56%
+2024-06-04T01:26:25.075Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 57%
+2024-06-04T01:26:25.077Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 58%
+2024-06-04T01:26:25.080Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 59%
+2024-06-04T01:26:25.082Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 60%
+2024-06-04T01:26:25.084Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 61%
+2024-06-04T01:26:25.088Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 63%
+2024-06-04T01:26:25.089Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 64%
+2024-06-04T01:26:25.095Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 66%
+2024-06-04T01:26:25.099Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 67%
+2024-06-04T01:26:25.100Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 68%
+2024-06-04T01:26:25.102Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 69%
+2024-06-04T01:26:25.104Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 70%
+2024-06-04T01:26:25.110Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 74%
+2024-06-04T01:26:25.113Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 75%
+2024-06-04T01:26:25.119Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 77%
+2024-06-04T01:26:25.122Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 79%
+2024-06-04T01:26:25.125Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 80%
+2024-06-04T01:26:25.127Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 81%
+2024-06-04T01:26:25.130Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 82%
+2024-06-04T01:26:25.132Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 83%
+2024-06-04T01:26:25.135Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 85%
+2024-06-04T01:26:25.138Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 86%
+2024-06-04T01:26:25.140Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 87%
+2024-06-04T01:26:25.142Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 88%
+2024-06-04T01:26:25.144Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 89%
+2024-06-04T01:26:25.145Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 90%
+2024-06-04T01:26:25.148Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 91%
+2024-06-04T01:26:25.151Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 92%
+2024-06-04T01:26:25.154Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 94%
+2024-06-04T01:26:25.156Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 96%
+2024-06-04T01:26:25.158Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 97%
+2024-06-04T01:26:25.162Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 98%
+2024-06-04T01:26:25.164Z [Modules] Streaming discord_erlpack@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip: 100%
+2024-06-04T01:26:25.170Z [Modules] Fetching discord_spellcheck@1 from https://discord.com/api/modules/stable/discord_spellcheck/1
+2024-06-04T01:26:25.170Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip
+2024-06-04T01:26:25.431Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 1%
+2024-06-04T01:26:25.440Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 2%
+2024-06-04T01:26:25.452Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 3%
+2024-06-04T01:26:25.458Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 4%
+2024-06-04T01:26:25.469Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 5%
+2024-06-04T01:26:25.476Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 6%
+2024-06-04T01:26:25.484Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 7%
+2024-06-04T01:26:25.495Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 8%
+2024-06-04T01:26:25.503Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 9%
+2024-06-04T01:26:25.509Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 10%
+2024-06-04T01:26:25.518Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 11%
+2024-06-04T01:26:25.525Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 12%
+2024-06-04T01:26:25.534Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 13%
+2024-06-04T01:26:25.541Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 14%
+2024-06-04T01:26:25.549Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 15%
+2024-06-04T01:26:25.556Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 16%
+2024-06-04T01:26:25.565Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 17%
+2024-06-04T01:26:25.573Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 18%
+2024-06-04T01:26:25.578Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 19%
+2024-06-04T01:26:25.588Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 20%
+2024-06-04T01:26:25.591Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 21%
+2024-06-04T01:26:25.601Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 22%
+2024-06-04T01:26:25.608Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 23%
+2024-06-04T01:26:25.616Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 24%
+2024-06-04T01:26:25.621Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 25%
+2024-06-04T01:26:25.626Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 26%
+2024-06-04T01:26:25.633Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 27%
+2024-06-04T01:26:25.642Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 28%
+2024-06-04T01:26:25.651Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 29%
+2024-06-04T01:26:25.657Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 30%
+2024-06-04T01:26:25.662Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 31%
+2024-06-04T01:26:25.668Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 32%
+2024-06-04T01:26:25.676Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 33%
+2024-06-04T01:26:25.681Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 34%
+2024-06-04T01:26:25.690Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 35%
+2024-06-04T01:26:25.696Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 36%
+2024-06-04T01:26:25.703Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 37%
+2024-06-04T01:26:25.712Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 38%
+2024-06-04T01:26:25.721Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 39%
+2024-06-04T01:26:25.724Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 40%
+2024-06-04T01:26:25.733Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 41%
+2024-06-04T01:26:25.739Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 42%
+2024-06-04T01:26:25.744Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 43%
+2024-06-04T01:26:25.752Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 44%
+2024-06-04T01:26:25.760Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 45%
+2024-06-04T01:26:25.767Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 46%
+2024-06-04T01:26:25.775Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 47%
+2024-06-04T01:26:25.781Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 48%
+2024-06-04T01:26:25.787Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 49%
+2024-06-04T01:26:25.795Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 50%
+2024-06-04T01:26:25.802Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 51%
+2024-06-04T01:26:25.809Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 52%
+2024-06-04T01:26:25.815Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 53%
+2024-06-04T01:26:25.823Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 54%
+2024-06-04T01:26:25.829Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 55%
+2024-06-04T01:26:25.837Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 56%
+2024-06-04T01:26:25.842Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 57%
+2024-06-04T01:26:25.848Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 58%
+2024-06-04T01:26:25.857Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 59%
+2024-06-04T01:26:25.865Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 60%
+2024-06-04T01:26:25.872Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 61%
+2024-06-04T01:26:25.880Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 62%
+2024-06-04T01:26:25.888Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 63%
+2024-06-04T01:26:25.894Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 64%
+2024-06-04T01:26:25.899Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 65%
+2024-06-04T01:26:25.909Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 66%
+2024-06-04T01:26:25.915Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 67%
+2024-06-04T01:26:25.925Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 68%
+2024-06-04T01:26:25.930Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 69%
+2024-06-04T01:26:25.935Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 70%
+2024-06-04T01:26:25.939Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 71%
+2024-06-04T01:26:25.953Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 72%
+2024-06-04T01:26:25.959Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 73%
+2024-06-04T01:26:25.965Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 74%
+2024-06-04T01:26:25.973Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 75%
+2024-06-04T01:26:25.978Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 76%
+2024-06-04T01:26:25.986Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 77%
+2024-06-04T01:26:25.992Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 78%
+2024-06-04T01:26:25.997Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 79%
+2024-06-04T01:26:26.003Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 80%
+2024-06-04T01:26:26.013Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 81%
+2024-06-04T01:26:26.019Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 82%
+2024-06-04T01:26:26.026Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 83%
+2024-06-04T01:26:26.032Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 84%
+2024-06-04T01:26:26.037Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 85%
+2024-06-04T01:26:26.043Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 86%
+2024-06-04T01:26:26.051Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 87%
+2024-06-04T01:26:26.056Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 88%
+2024-06-04T01:26:26.065Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 89%
+2024-06-04T01:26:26.071Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 90%
+2024-06-04T01:26:26.076Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 91%
+2024-06-04T01:26:26.081Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 92%
+2024-06-04T01:26:26.089Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 93%
+2024-06-04T01:26:26.095Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 94%
+2024-06-04T01:26:26.102Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 95%
+2024-06-04T01:26:26.109Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 96%
+2024-06-04T01:26:26.115Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 97%
+2024-06-04T01:26:26.122Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 98%
+2024-06-04T01:26:26.130Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 99%
+2024-06-04T01:26:26.133Z [Modules] Streaming discord_spellcheck@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip: 100%
+2024-06-04T01:26:26.135Z [Modules] Fetching discord_utils@1 from https://discord.com/api/modules/stable/discord_utils/1
+2024-06-04T01:26:26.135Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip
+2024-06-04T01:26:26.347Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 1%
+2024-06-04T01:26:26.349Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 3%
+2024-06-04T01:26:26.359Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 5%
+2024-06-04T01:26:26.361Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 6%
+2024-06-04T01:26:26.364Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 7%
+2024-06-04T01:26:26.367Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 8%
+2024-06-04T01:26:26.375Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 10%
+2024-06-04T01:26:26.378Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 12%
+2024-06-04T01:26:26.382Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 13%
+2024-06-04T01:26:26.385Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 15%
+2024-06-04T01:26:26.387Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 16%
+2024-06-04T01:26:26.391Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 17%
+2024-06-04T01:26:26.393Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 19%
+2024-06-04T01:26:26.396Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 20%
+2024-06-04T01:26:26.399Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 21%
+2024-06-04T01:26:26.403Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 23%
+2024-06-04T01:26:26.405Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 24%
+2024-06-04T01:26:26.408Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 25%
+2024-06-04T01:26:26.411Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 27%
+2024-06-04T01:26:26.414Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 28%
+2024-06-04T01:26:26.416Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 30%
+2024-06-04T01:26:26.420Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 31%
+2024-06-04T01:26:26.423Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 32%
+2024-06-04T01:26:26.425Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 34%
+2024-06-04T01:26:26.428Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 35%
+2024-06-04T01:26:26.431Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 36%
+2024-06-04T01:26:26.433Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 38%
+2024-06-04T01:26:26.438Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 40%
+2024-06-04T01:26:26.439Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 41%
+2024-06-04T01:26:26.442Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 42%
+2024-06-04T01:26:26.445Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 43%
+2024-06-04T01:26:26.448Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 45%
+2024-06-04T01:26:26.451Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 46%
+2024-06-04T01:26:26.454Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 47%
+2024-06-04T01:26:26.456Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 49%
+2024-06-04T01:26:26.459Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 50%
+2024-06-04T01:26:26.462Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 51%
+2024-06-04T01:26:26.464Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 52%
+2024-06-04T01:26:26.467Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 54%
+2024-06-04T01:26:26.470Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 56%
+2024-06-04T01:26:26.473Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 57%
+2024-06-04T01:26:26.476Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 58%
+2024-06-04T01:26:26.479Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 60%
+2024-06-04T01:26:26.482Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 61%
+2024-06-04T01:26:26.484Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 62%
+2024-06-04T01:26:26.487Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 64%
+2024-06-04T01:26:26.489Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 65%
+2024-06-04T01:26:26.491Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 66%
+2024-06-04T01:26:26.494Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 68%
+2024-06-04T01:26:26.497Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 69%
+2024-06-04T01:26:26.500Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 71%
+2024-06-04T01:26:26.503Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 72%
+2024-06-04T01:26:26.505Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 73%
+2024-06-04T01:26:26.508Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 75%
+2024-06-04T01:26:26.511Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 76%
+2024-06-04T01:26:26.514Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 77%
+2024-06-04T01:26:26.516Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 79%
+2024-06-04T01:26:26.519Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 80%
+2024-06-04T01:26:26.522Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 82%
+2024-06-04T01:26:26.525Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 83%
+2024-06-04T01:26:26.528Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 84%
+2024-06-04T01:26:26.530Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 86%
+2024-06-04T01:26:26.532Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 87%
+2024-06-04T01:26:26.535Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 88%
+2024-06-04T01:26:26.538Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 89%
+2024-06-04T01:26:26.541Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 90%
+2024-06-04T01:26:26.544Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 91%
+2024-06-04T01:26:26.548Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 93%
+2024-06-04T01:26:26.550Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 94%
+2024-06-04T01:26:26.553Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 96%
+2024-06-04T01:26:26.558Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 97%
+2024-06-04T01:26:26.560Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 98%
+2024-06-04T01:26:26.562Z [Modules] Streaming discord_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip: 100%
+2024-06-04T01:26:26.563Z [Modules] Fetching discord_voice@3 from https://discord.com/api/modules/stable/discord_voice/3
+2024-06-04T01:26:26.564Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip
+2024-06-04T01:26:26.795Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 1%
+2024-06-04T01:26:26.810Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 2%
+2024-06-04T01:26:26.827Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 3%
+2024-06-04T01:26:26.851Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 4%
+2024-06-04T01:26:26.866Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 5%
+2024-06-04T01:26:26.884Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 6%
+2024-06-04T01:26:26.901Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 7%
+2024-06-04T01:26:26.917Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 8%
+2024-06-04T01:26:26.932Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 9%
+2024-06-04T01:26:26.954Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 10%
+2024-06-04T01:26:26.967Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 11%
+2024-06-04T01:26:26.985Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 12%
+2024-06-04T01:26:26.998Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 13%
+2024-06-04T01:26:27.012Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 14%
+2024-06-04T01:26:27.029Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 15%
+2024-06-04T01:26:27.048Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 16%
+2024-06-04T01:26:27.061Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 17%
+2024-06-04T01:26:27.077Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 18%
+2024-06-04T01:26:27.097Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 19%
+2024-06-04T01:26:27.113Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 20%
+2024-06-04T01:26:27.126Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 21%
+2024-06-04T01:26:27.146Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 22%
+2024-06-04T01:26:27.163Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 23%
+2024-06-04T01:26:27.178Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 24%
+2024-06-04T01:26:27.195Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 25%
+2024-06-04T01:26:27.210Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 26%
+2024-06-04T01:26:27.225Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 27%
+2024-06-04T01:26:27.242Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 28%
+2024-06-04T01:26:27.261Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 29%
+2024-06-04T01:26:27.275Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 30%
+2024-06-04T01:26:27.293Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 31%
+2024-06-04T01:26:27.309Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 32%
+2024-06-04T01:26:27.322Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 33%
+2024-06-04T01:26:27.342Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 34%
+2024-06-04T01:26:27.358Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 35%
+2024-06-04T01:26:27.374Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 36%
+2024-06-04T01:26:27.389Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 37%
+2024-06-04T01:26:27.407Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 38%
+2024-06-04T01:26:27.424Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 39%
+2024-06-04T01:26:27.439Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 40%
+2024-06-04T01:26:27.455Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 41%
+2024-06-04T01:26:27.473Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 42%
+2024-06-04T01:26:27.495Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 43%
+2024-06-04T01:26:27.510Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 44%
+2024-06-04T01:26:27.522Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 45%
+2024-06-04T01:26:27.540Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 46%
+2024-06-04T01:26:27.555Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 47%
+2024-06-04T01:26:27.574Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 48%
+2024-06-04T01:26:27.587Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 49%
+2024-06-04T01:26:27.605Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 50%
+2024-06-04T01:26:27.623Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 51%
+2024-06-04T01:26:27.642Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 52%
+2024-06-04T01:26:27.657Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 53%
+2024-06-04T01:26:27.672Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 54%
+2024-06-04T01:26:27.691Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 55%
+2024-06-04T01:26:27.709Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 56%
+2024-06-04T01:26:27.728Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 57%
+2024-06-04T01:26:27.743Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 58%
+2024-06-04T01:26:27.760Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 59%
+2024-06-04T01:26:27.775Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 60%
+2024-06-04T01:26:27.789Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 61%
+2024-06-04T01:26:27.806Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 62%
+2024-06-04T01:26:27.820Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 63%
+2024-06-04T01:26:27.839Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 64%
+2024-06-04T01:26:27.855Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 65%
+2024-06-04T01:26:27.875Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 66%
+2024-06-04T01:26:27.889Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 67%
+2024-06-04T01:26:27.907Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 68%
+2024-06-04T01:26:27.919Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 69%
+2024-06-04T01:26:27.936Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 70%
+2024-06-04T01:26:27.957Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 71%
+2024-06-04T01:26:27.973Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 72%
+2024-06-04T01:26:27.987Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 73%
+2024-06-04T01:26:28.003Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 74%
+2024-06-04T01:26:28.022Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 75%
+2024-06-04T01:26:28.038Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 76%
+2024-06-04T01:26:28.055Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 77%
+2024-06-04T01:26:28.071Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 78%
+2024-06-04T01:26:28.085Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 79%
+2024-06-04T01:26:28.101Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 80%
+2024-06-04T01:26:28.119Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 81%
+2024-06-04T01:26:28.137Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 82%
+2024-06-04T01:26:28.152Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 83%
+2024-06-04T01:26:28.168Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 84%
+2024-06-04T01:26:28.186Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 85%
+2024-06-04T01:26:28.200Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 86%
+2024-06-04T01:26:28.220Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 87%
+2024-06-04T01:26:28.234Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 88%
+2024-06-04T01:26:28.251Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 89%
+2024-06-04T01:26:28.269Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 90%
+2024-06-04T01:26:28.285Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 91%
+2024-06-04T01:26:28.301Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 92%
+2024-06-04T01:26:28.317Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 93%
+2024-06-04T01:26:28.336Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 94%
+2024-06-04T01:26:28.351Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 95%
+2024-06-04T01:26:28.367Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 96%
+2024-06-04T01:26:28.385Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 97%
+2024-06-04T01:26:28.399Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 98%
+2024-06-04T01:26:28.420Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 99%
+2024-06-04T01:26:28.431Z [Modules] Streaming discord_voice@3 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip: 100%
+2024-06-04T01:26:28.434Z [Modules] Fetching discord_zstd@1 from https://discord.com/api/modules/stable/discord_zstd/1
+2024-06-04T01:26:28.435Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip
+2024-06-04T01:26:28.722Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 3%
+2024-06-04T01:26:28.725Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 5%
+2024-06-04T01:26:28.734Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 8%
+2024-06-04T01:26:28.737Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 17%
+2024-06-04T01:26:28.740Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 21%
+2024-06-04T01:26:28.742Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 25%
+2024-06-04T01:26:28.745Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 27%
+2024-06-04T01:26:28.750Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 31%
+2024-06-04T01:26:28.753Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 35%
+2024-06-04T01:26:28.756Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 38%
+2024-06-04T01:26:28.760Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 41%
+2024-06-04T01:26:28.763Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 45%
+2024-06-04T01:26:28.766Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 48%
+2024-06-04T01:26:28.770Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 52%
+2024-06-04T01:26:28.772Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 54%
+2024-06-04T01:26:28.776Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 58%
+2024-06-04T01:26:28.779Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 62%
+2024-06-04T01:26:28.782Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 64%
+2024-06-04T01:26:28.785Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 68%
+2024-06-04T01:26:28.788Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 72%
+2024-06-04T01:26:28.790Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 75%
+2024-06-04T01:26:28.794Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 78%
+2024-06-04T01:26:28.797Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 81%
+2024-06-04T01:26:28.800Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 85%
+2024-06-04T01:26:28.803Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 89%
+2024-06-04T01:26:28.806Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 92%
+2024-06-04T01:26:28.809Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 95%
+2024-06-04T01:26:28.812Z [Modules] Streaming discord_zstd@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip: 100%
+2024-06-04T01:26:28.814Z [Modules] Finished module downloads. [success: 6] [failure: 0]
+2024-06-04T01:26:28.814Z [Modules] Installing updates...
+2024-06-04T01:26:28.815Z [Modules] Installing discord_desktop_core@1 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_desktop_core-1.zip
+2024-06-04T01:26:28.898Z [Modules] Installing discord_erlpack@1 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_erlpack-1.zip
+2024-06-04T01:26:28.944Z [Modules] Installing discord_spellcheck@1 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_spellcheck-1.zip
+2024-06-04T01:26:29.629Z [Modules] Installing discord_utils@1 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_utils-1.zip
+2024-06-04T01:26:29.741Z [Modules] Installing discord_voice@3 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_voice-3.zip
+2024-06-04T01:26:30.187Z [Modules] Installing discord_zstd@1 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_zstd-1.zip
+2024-06-04T01:26:30.220Z [Modules] Finished module installations. [success: 6] [failure: 0]
+2024-06-04T01:26:30.220Z [Modules] Checking for host updates.
+2024-06-04T01:26:30.421Z [Modules] Host is up to date.
+2024-06-04T01:26:30.421Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T01:26:30.430Z [Modules] No module updates available.
+2024-06-04T01:26:31.647Z [Modules] Starting to install discord_krisp...
+2024-06-04T01:26:31.647Z [Modules] Fetching discord_krisp@2 from https://discord.com/api/modules/stable/discord_krisp/2
+2024-06-04T01:26:31.647Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip
+2024-06-04T01:26:31.654Z [Modules] Starting to install discord_game_utils...
+2024-06-04T01:26:31.907Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 1%
+2024-06-04T01:26:31.922Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 2%
+2024-06-04T01:26:31.938Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 3%
+2024-06-04T01:26:31.964Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 4%
+2024-06-04T01:26:31.988Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 5%
+2024-06-04T01:26:31.995Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 6%
+2024-06-04T01:26:32.025Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 7%
+2024-06-04T01:26:32.041Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 8%
+2024-06-04T01:26:32.079Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 9%
+2024-06-04T01:26:32.096Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 10%
+2024-06-04T01:26:32.111Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 11%
+2024-06-04T01:26:32.131Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 12%
+2024-06-04T01:26:32.148Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 13%
+2024-06-04T01:26:32.165Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 14%
+2024-06-04T01:26:32.185Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 15%
+2024-06-04T01:26:32.200Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 16%
+2024-06-04T01:26:32.219Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 17%
+2024-06-04T01:26:32.242Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 18%
+2024-06-04T01:26:32.257Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 19%
+2024-06-04T01:26:32.276Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 20%
+2024-06-04T01:26:32.292Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 21%
+2024-06-04T01:26:32.317Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 22%
+2024-06-04T01:26:32.332Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 23%
+2024-06-04T01:26:32.370Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 24%
+2024-06-04T01:26:32.378Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 25%
+2024-06-04T01:26:32.385Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 26%
+2024-06-04T01:26:32.399Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 27%
+2024-06-04T01:26:32.419Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 28%
+2024-06-04T01:26:32.455Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 29%
+2024-06-04T01:26:32.457Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 30%
+2024-06-04T01:26:32.493Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 31%
+2024-06-04T01:26:32.514Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 32%
+2024-06-04T01:26:32.540Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 33%
+2024-06-04T01:26:32.565Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 34%
+2024-06-04T01:26:32.604Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 35%
+2024-06-04T01:26:32.625Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 36%
+2024-06-04T01:26:32.642Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 37%
+2024-06-04T01:26:32.656Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 38%
+2024-06-04T01:26:32.678Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 39%
+2024-06-04T01:26:32.693Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 40%
+2024-06-04T01:26:32.711Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 41%
+2024-06-04T01:26:32.724Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 42%
+2024-06-04T01:26:32.741Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 43%
+2024-06-04T01:26:32.753Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 44%
+2024-06-04T01:26:32.774Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 45%
+2024-06-04T01:26:32.783Z [Modules] Checking for host updates.
+2024-06-04T01:26:32.787Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 46%
+2024-06-04T01:26:32.804Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 47%
+2024-06-04T01:26:32.819Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 48%
+2024-06-04T01:26:32.835Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 49%
+2024-06-04T01:26:32.848Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 50%
+2024-06-04T01:26:32.864Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 51%
+2024-06-04T01:26:32.881Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 52%
+2024-06-04T01:26:32.893Z [Modules] Starting to install discord_rpc...
+2024-06-04T01:26:32.894Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 53%
+2024-06-04T01:26:32.910Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 54%
+2024-06-04T01:26:32.931Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 55%
+2024-06-04T01:26:32.942Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 56%
+2024-06-04T01:26:32.947Z [Modules] Host is up to date.
+2024-06-04T01:26:32.947Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T01:26:32.954Z [Modules] No module updates available.
+2024-06-04T01:26:32.959Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 57%
+2024-06-04T01:26:32.976Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 58%
+2024-06-04T01:26:32.995Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 59%
+2024-06-04T01:26:33.010Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 60%
+2024-06-04T01:26:33.027Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 61%
+2024-06-04T01:26:33.041Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 62%
+2024-06-04T01:26:33.058Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 63%
+2024-06-04T01:26:33.071Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 64%
+2024-06-04T01:26:33.092Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 65%
+2024-06-04T01:26:33.106Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 66%
+2024-06-04T01:26:33.120Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 67%
+2024-06-04T01:26:33.138Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 68%
+2024-06-04T01:26:33.151Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 69%
+2024-06-04T01:26:33.166Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 70%
+2024-06-04T01:26:33.182Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 71%
+2024-06-04T01:26:33.196Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 72%
+2024-06-04T01:26:33.211Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 73%
+2024-06-04T01:26:33.225Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 74%
+2024-06-04T01:26:33.246Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 75%
+2024-06-04T01:26:33.259Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 76%
+2024-06-04T01:26:33.273Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 77%
+2024-06-04T01:26:33.291Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 78%
+2024-06-04T01:26:33.310Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 79%
+2024-06-04T01:26:33.326Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 80%
+2024-06-04T01:26:33.341Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 81%
+2024-06-04T01:26:33.356Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 82%
+2024-06-04T01:26:33.372Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 83%
+2024-06-04T01:26:33.388Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 84%
+2024-06-04T01:26:33.401Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 85%
+2024-06-04T01:26:33.418Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 86%
+2024-06-04T01:26:33.432Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 87%
+2024-06-04T01:26:33.451Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 88%
+2024-06-04T01:26:33.465Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 89%
+2024-06-04T01:26:33.484Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 90%
+2024-06-04T01:26:33.508Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 91%
+2024-06-04T01:26:33.523Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 92%
+2024-06-04T01:26:33.542Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 93%
+2024-06-04T01:26:33.566Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 94%
+2024-06-04T01:26:33.584Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 95%
+2024-06-04T01:26:33.604Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 96%
+2024-06-04T01:26:33.620Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 97%
+2024-06-04T01:26:33.649Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 98%
+2024-06-04T01:26:33.671Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 99%
+2024-06-04T01:26:33.684Z [Modules] Streaming discord_krisp@2 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip: 100%
+2024-06-04T01:26:33.687Z [Modules] Fetching discord_game_utils@1 from https://discord.com/api/modules/stable/discord_game_utils/1
+2024-06-04T01:26:33.688Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip
+2024-06-04T01:26:33.688Z [Modules] Installing discord_krisp@2 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_krisp-2.zip
+2024-06-04T01:26:33.952Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 1%
+2024-06-04T01:26:33.956Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 3%
+2024-06-04T01:26:33.965Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 6%
+2024-06-04T01:26:33.969Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 7%
+2024-06-04T01:26:33.972Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 9%
+2024-06-04T01:26:33.975Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 10%
+2024-06-04T01:26:33.978Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 12%
+2024-06-04T01:26:33.980Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 14%
+2024-06-04T01:26:33.984Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 16%
+2024-06-04T01:26:33.987Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 17%
+2024-06-04T01:26:33.991Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 19%
+2024-06-04T01:26:33.997Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 22%
+2024-06-04T01:26:34.002Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 24%
+2024-06-04T01:26:34.005Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 25%
+2024-06-04T01:26:34.008Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 26%
+2024-06-04T01:26:34.010Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 28%
+2024-06-04T01:26:34.013Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 30%
+2024-06-04T01:26:34.017Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 32%
+2024-06-04T01:26:34.019Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 34%
+2024-06-04T01:26:34.022Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 35%
+2024-06-04T01:26:34.025Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 37%
+2024-06-04T01:26:34.028Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 39%
+2024-06-04T01:26:34.031Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 41%
+2024-06-04T01:26:34.034Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 42%
+2024-06-04T01:26:34.037Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 44%
+2024-06-04T01:26:34.041Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 46%
+2024-06-04T01:26:34.045Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 47%
+2024-06-04T01:26:34.048Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 48%
+2024-06-04T01:26:34.051Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 49%
+2024-06-04T01:26:34.054Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 51%
+2024-06-04T01:26:34.057Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 53%
+2024-06-04T01:26:34.060Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 55%
+2024-06-04T01:26:34.063Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 56%
+2024-06-04T01:26:34.065Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 58%
+2024-06-04T01:26:34.069Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 60%
+2024-06-04T01:26:34.072Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 61%
+2024-06-04T01:26:34.074Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 63%
+2024-06-04T01:26:34.079Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 65%
+2024-06-04T01:26:34.081Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 66%
+2024-06-04T01:26:34.084Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 68%
+2024-06-04T01:26:34.087Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 70%
+2024-06-04T01:26:34.089Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 71%
+2024-06-04T01:26:34.092Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 73%
+2024-06-04T01:26:34.094Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 75%
+2024-06-04T01:26:34.097Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 76%
+2024-06-04T01:26:34.101Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 78%
+2024-06-04T01:26:34.104Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 80%
+2024-06-04T01:26:34.106Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 81%
+2024-06-04T01:26:34.108Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 82%
+2024-06-04T01:26:34.109Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 83%
+2024-06-04T01:26:34.112Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 85%
+2024-06-04T01:26:34.115Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 86%
+2024-06-04T01:26:34.117Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 88%
+2024-06-04T01:26:34.120Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 90%
+2024-06-04T01:26:34.123Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 91%
+2024-06-04T01:26:34.125Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 93%
+2024-06-04T01:26:34.128Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 95%
+2024-06-04T01:26:34.131Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 96%
+2024-06-04T01:26:34.134Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 99%
+2024-06-04T01:26:34.135Z [Modules] Streaming discord_game_utils@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip: 100%
+2024-06-04T01:26:34.137Z [Modules] Fetching discord_rpc@1 from https://discord.com/api/modules/stable/discord_rpc/1
+2024-06-04T01:26:34.137Z [Modules] Streaming discord_rpc@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_rpc-1.zip
+2024-06-04T01:26:34.331Z [Modules] Streaming discord_rpc@1 to /home/soybean44/.config/discord/0.0.54/modules/pending/discord_rpc-1.zip: 100%
+2024-06-04T01:26:34.333Z [Modules] Installing discord_game_utils@1 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_game_utils-1.zip
+2024-06-04T01:26:34.334Z [Modules] Finished module downloads. [success: 3] [failure: 0]
+2024-06-04T01:26:34.437Z [Modules] Installing discord_rpc@1 from /home/soybean44/.config/discord/0.0.54/modules/pending/discord_rpc-1.zip
+2024-06-04T01:26:34.468Z [Modules] Finished module installations. [success: 3] [failure: 0]
+2024-06-04T01:33:39.483Z [Modules] Modules initializing
+2024-06-04T01:33:39.483Z [Modules] Distribution: remote
+2024-06-04T01:33:39.483Z [Modules] Host updates: enabled
+2024-06-04T01:33:39.483Z [Modules] Module updates: enabled
+2024-06-04T01:33:39.483Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T01:33:39.483Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-04T01:33:39.484Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-04T01:33:39.677Z [Modules] No updates to install
+2024-06-04T01:33:39.678Z [Modules] Checking for host updates.
+2024-06-04T01:33:39.917Z [Modules] Host is up to date.
+2024-06-04T01:33:39.918Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T01:33:39.954Z [Modules] No module updates available.
+2024-06-04T01:33:42.648Z [Modules] Checking for host updates.
+2024-06-04T01:33:42.799Z [Modules] Host is up to date.
+2024-06-04T01:33:42.800Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T01:33:42.805Z [Modules] No module updates available.
+2024-06-04T01:35:08.760Z [Modules] Modules initializing
+2024-06-04T01:35:08.761Z [Modules] Distribution: remote
+2024-06-04T01:35:08.761Z [Modules] Host updates: enabled
+2024-06-04T01:35:08.761Z [Modules] Module updates: enabled
+2024-06-04T01:35:08.761Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T01:35:08.761Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-04T01:35:08.761Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-04T01:35:08.955Z [Modules] No updates to install
+2024-06-04T01:35:08.955Z [Modules] Checking for host updates.
+2024-06-04T01:35:09.179Z [Modules] Host is up to date.
+2024-06-04T01:35:09.180Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T01:35:09.219Z [Modules] No module updates available.
+2024-06-04T01:35:11.851Z [Modules] Checking for host updates.
+2024-06-04T01:35:11.986Z [Modules] Host is up to date.
+2024-06-04T01:35:11.986Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T01:35:11.990Z [Modules] No module updates available.
+2024-06-04T02:06:14.328Z [Modules] Modules initializing
+2024-06-04T02:06:14.328Z [Modules] Distribution: remote
+2024-06-04T02:06:14.328Z [Modules] Host updates: enabled
+2024-06-04T02:06:14.328Z [Modules] Module updates: enabled
+2024-06-04T02:06:14.328Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T02:06:14.328Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-04T02:06:14.328Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-04T02:06:14.484Z [Modules] No updates to install
+2024-06-04T02:06:14.485Z [Modules] Checking for host updates.
+2024-06-04T02:06:14.709Z [Modules] Host is up to date.
+2024-06-04T02:06:14.710Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T02:06:14.745Z [Modules] No module updates available.
+2024-06-04T02:06:17.429Z [Modules] Checking for host updates.
+2024-06-04T02:06:17.656Z [Modules] Host is up to date.
+2024-06-04T02:06:17.656Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T02:06:17.660Z [Modules] No module updates available.
+2024-06-04T03:06:17.431Z [Modules] Checking for host updates.
+2024-06-04T03:06:17.649Z [Modules] Host is up to date.
+2024-06-04T03:06:17.650Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T03:06:17.686Z [Modules] No module updates available.
+2024-06-04T19:01:48.594Z [Modules] Modules initializing
+2024-06-04T19:01:48.594Z [Modules] Distribution: remote
+2024-06-04T19:01:48.594Z [Modules] Host updates: enabled
+2024-06-04T19:01:48.594Z [Modules] Module updates: enabled
+2024-06-04T19:01:48.594Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T19:01:48.594Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-04T19:01:48.594Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-04T19:01:48.778Z [Modules] No updates to install
+2024-06-04T19:01:48.779Z [Modules] Checking for host updates.
+2024-06-04T19:01:49.020Z [Modules] Host is up to date.
+2024-06-04T19:01:49.021Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T19:01:49.059Z [Modules] No module updates available.
+2024-06-04T19:01:51.670Z [Modules] Checking for host updates.
+2024-06-04T19:01:51.819Z [Modules] Host is up to date.
+2024-06-04T19:01:51.819Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T19:01:51.822Z [Modules] No module updates available.
+2024-06-04T20:01:51.725Z [Modules] Checking for host updates.
+2024-06-04T20:01:51.921Z [Modules] Host is up to date.
+2024-06-04T20:01:51.922Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T20:01:51.957Z [Modules] No module updates available.
+2024-06-04T21:01:51.730Z [Modules] Checking for host updates.
+2024-06-04T21:01:51.913Z [Modules] Host is up to date.
+2024-06-04T21:01:51.914Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T21:01:51.951Z [Modules] No module updates available.
+2024-06-04T22:01:51.673Z [Modules] Checking for host updates.
+2024-06-04T22:01:51.909Z [Modules] Host is up to date.
+2024-06-04T22:01:51.909Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T22:01:51.943Z [Modules] No module updates available.
+2024-06-04T23:19:24.448Z [Modules] Modules initializing
+2024-06-04T23:19:24.448Z [Modules] Distribution: remote
+2024-06-04T23:19:24.449Z [Modules] Host updates: enabled
+2024-06-04T23:19:24.449Z [Modules] Module updates: enabled
+2024-06-04T23:19:24.449Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T23:19:24.449Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-04T23:19:24.449Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-04T23:19:24.627Z [Modules] No updates to install
+2024-06-04T23:19:24.627Z [Modules] Checking for host updates.
+2024-06-04T23:19:24.835Z [Modules] Host update is available. Manual update required!
+2024-06-04T23:20:39.978Z [Modules] Modules initializing
+2024-06-04T23:20:39.978Z [Modules] Distribution: remote
+2024-06-04T23:20:39.978Z [Modules] Host updates: disabled
+2024-06-04T23:20:39.978Z [Modules] Module updates: enabled
+2024-06-04T23:20:39.979Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-04T23:20:39.979Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-04T23:20:39.979Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-04T23:20:40.143Z [Modules] No updates to install
+2024-06-04T23:20:40.144Z [Modules] Host is up to date.
+2024-06-04T23:20:40.144Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T23:20:40.288Z [Modules] No module updates available.
+2024-06-04T23:20:43.085Z [Modules] Host is up to date.
+2024-06-04T23:20:43.086Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-04T23:20:43.089Z [Modules] No module updates available.
+2024-06-05T00:20:43.090Z [Modules] Host is up to date.
+2024-06-05T00:20:43.090Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T00:20:43.165Z [Modules] No module updates available.
+2024-06-05T02:26:12.166Z [Modules] Modules initializing
+2024-06-05T02:26:12.166Z [Modules] Distribution: remote
+2024-06-05T02:26:12.166Z [Modules] Host updates: disabled
+2024-06-05T02:26:12.167Z [Modules] Module updates: enabled
+2024-06-05T02:26:12.167Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:26:12.167Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-05T02:26:12.167Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-05T02:26:12.343Z [Modules] No updates to install
+2024-06-05T02:26:12.343Z [Modules] Host is up to date.
+2024-06-05T02:26:12.344Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:26:12.468Z [Modules] No module updates available.
+2024-06-05T02:26:15.208Z [Modules] Host is up to date.
+2024-06-05T02:26:15.208Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:26:15.211Z [Modules] No module updates available.
+2024-06-05T02:28:55.334Z [Modules] Modules initializing
+2024-06-05T02:28:55.334Z [Modules] Distribution: remote
+2024-06-05T02:28:55.334Z [Modules] Host updates: disabled
+2024-06-05T02:28:55.334Z [Modules] Module updates: enabled
+2024-06-05T02:28:55.334Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:28:55.334Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-05T02:28:55.334Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-05T02:28:55.563Z [Modules] No updates to install
+2024-06-05T02:28:55.564Z [Modules] Host is up to date.
+2024-06-05T02:28:55.564Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:28:55.574Z [Modules] No module updates available.
+2024-06-05T02:28:58.249Z [Modules] Host is up to date.
+2024-06-05T02:28:58.249Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:28:58.252Z [Modules] No module updates available.
+2024-06-05T02:30:35.766Z [Modules] Modules initializing
+2024-06-05T02:30:35.766Z [Modules] Distribution: remote
+2024-06-05T02:30:35.766Z [Modules] Host updates: disabled
+2024-06-05T02:30:35.766Z [Modules] Module updates: enabled
+2024-06-05T02:30:35.766Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:30:35.767Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-05T02:30:35.767Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-05T02:30:35.953Z [Modules] No updates to install
+2024-06-05T02:30:35.953Z [Modules] Host is up to date.
+2024-06-05T02:30:35.953Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:30:36.055Z [Modules] No module updates available.
+2024-06-05T02:30:38.540Z [Modules] Host is up to date.
+2024-06-05T02:30:38.540Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:30:38.543Z [Modules] No module updates available.
+2024-06-05T02:35:45.511Z [Modules] Modules initializing
+2024-06-05T02:35:45.511Z [Modules] Distribution: remote
+2024-06-05T02:35:45.511Z [Modules] Host updates: disabled
+2024-06-05T02:35:45.511Z [Modules] Module updates: enabled
+2024-06-05T02:35:45.512Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:35:45.512Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-05T02:35:45.512Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-05T02:35:45.738Z [Modules] No updates to install
+2024-06-05T02:35:45.739Z [Modules] Host is up to date.
+2024-06-05T02:35:45.739Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:35:45.987Z [Modules] No module updates available.
+2024-06-05T02:35:48.808Z [Modules] Host is up to date.
+2024-06-05T02:35:48.808Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:35:48.812Z [Modules] No module updates available.
+2024-06-05T02:44:57.020Z [Modules] Modules initializing
+2024-06-05T02:44:57.020Z [Modules] Distribution: remote
+2024-06-05T02:44:57.020Z [Modules] Host updates: disabled
+2024-06-05T02:44:57.020Z [Modules] Module updates: enabled
+2024-06-05T02:44:57.021Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T02:44:57.021Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-05T02:44:57.021Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-05T02:44:57.277Z [Modules] No updates to install
+2024-06-05T02:44:57.278Z [Modules] Host is up to date.
+2024-06-05T02:44:57.278Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:44:57.439Z [Modules] No module updates available.
+2024-06-05T02:45:00.339Z [Modules] Host is up to date.
+2024-06-05T02:45:00.339Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T02:45:00.497Z [Modules] No module updates available.
+2024-06-05T21:53:55.875Z [Modules] Modules initializing
+2024-06-05T21:53:55.875Z [Modules] Distribution: remote
+2024-06-05T21:53:55.875Z [Modules] Host updates: disabled
+2024-06-05T21:53:55.875Z [Modules] Module updates: enabled
+2024-06-05T21:53:55.875Z [Modules] Module install path: /home/soybean44/.config/discord/0.0.54/modules
+2024-06-05T21:53:55.875Z [Modules] Module installed file path: /home/soybean44/.config/discord/0.0.54/modules/installed.json
+2024-06-05T21:53:55.876Z [Modules] Module download path: /home/soybean44/.config/discord/0.0.54/modules/pending
+2024-06-05T21:53:56.350Z [Modules] No updates to install
+2024-06-05T21:53:56.350Z [Modules] Host is up to date.
+2024-06-05T21:53:56.351Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T21:53:56.487Z [Modules] No module updates available.
+2024-06-05T21:53:59.328Z [Modules] Host is up to date.
+2024-06-05T21:53:59.328Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2024-06-05T21:53:59.333Z [Modules] No module updates available.
