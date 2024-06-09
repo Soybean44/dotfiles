@@ -70,7 +70,7 @@ myAditionalKeys =
   -- kill / restart xmonad
   , ("M-S-q", spawn "killall xmobar; xmonad --recompile; xmonad --restart")
   , ("M-S-<Esc>", spawn "shutdown now")
-  , ("M-C-S-l", spawn "xscreensaver-command -lock")
+  , ("M-C-S-l", spawn "slock")
 
   ]
 
