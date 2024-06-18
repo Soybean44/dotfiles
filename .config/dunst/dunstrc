@@ -4,6 +4,10 @@ separator_color= frame
 scale = 0
 width=(0,500)
 
+[play_sound]
+summary = "*"
+script = ~/dotfiles/.config/dunst/alert.sh
+
 [urgency_low]
 background = "#1E1E2E"
 foreground = "#CDD6F4"
