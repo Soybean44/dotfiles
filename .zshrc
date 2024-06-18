@@ -21,6 +21,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 eval "$(zoxide init zsh)"
 source <(/usr/bin/starship init zsh --print-full-init)
 source /etc/profile.d/emscripten.sh
+source ~/.zprofile
 
 # Aliases
 alias v="nvim"
