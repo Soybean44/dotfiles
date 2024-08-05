@@ -8,3 +8,7 @@ To add the dotfiles to a computer, install the gnu stow package and run `stow .`
 If you mess this up run the following command:
 `git submodule update --init --recursive`
 
+## Setup
+When setting up the dotfiles it is important to make the .config directory before you run stow. 
+This ensures that the entire directory is not a symlink and allows for untracked programs in the directory.
+
