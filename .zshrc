@@ -42,6 +42,7 @@ export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
 export PATH="$PATH:/home/soybean44/.cargo/bin/"
 export PATH="$PATH:/home/soybean44/Programs/zig/"
 export PATH="$PATH:/sbin/"
+export PATH="$PATH:/home/soybean44/.local/share/envision/prefixes/efded882-eeeb-4a70-accf-a00fc4907f0e/bin/"
 export PATH=$PATH:~/.modular/pkg/packages.modular.com_mojo/bin/
 
 export EDITOR=nvim
