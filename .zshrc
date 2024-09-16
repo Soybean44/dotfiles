@@ -34,8 +34,10 @@ alias update="yay --noconfirm --sudoloop"
 
 # Keybinds
 bindkey -r '^R'
-bindkey -s '^f' 'tmux-sessionizer\n'
-bindkey -s '^n' 'tmux-sessionizer new\n'
+bindkey -r '^t'
+bindkey -s '^f' ';tmux-sessionizer\n'
+bindkey -s '^t' ';tmux\n'
+bindkey -s '^n' ';tmux-sessionizer new\n'
 
 export PATH="$PATH:/home/soybean44/.local/bin/"
 export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
