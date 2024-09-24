@@ -1,0 +1,25 @@
+[Added Associations]
+text/plain=org.kde.kate.desktop;
+application/zip=org.kde.ark.desktop;
+
+[Default Applications]
+text/plain=org.kde.kate.desktop
+x-scheme-handler/discord-424004941485572097=discord-424004941485572097.desktop
+x-scheme-handler/http=zen-alpha.desktop
+x-scheme-handler/https=zen-alpha.desktop
+inode/directory=pcmanfm.desktop
+application/zip=org.kde.ark.desktop
+text/vnd.trolltech.linguist=zen-alpha.desktop
+text/html=zen-alpha.desktop
+application/smil+xml=zen-alpha.desktop
+application/xml=zen-alpha.desktop
+application/x-xpinstall=zen-alpha.desktop
+application/json=zen-alpha.desktop
+application/rdf+xml=zen-alpha.desktop
+application/rss+xml=zen-alpha.desktop
+application/x-ipynb+json=zen-alpha.desktop
+application/pdf=zen-alpha.desktop
+application/x-designer=zen-alpha.desktop
+application/xspf+xml=zen-alpha.desktop
+application/xhtml+xml=zen-alpha.desktop
+application/x-fictionbook+xml=zen-alpha.desktop
