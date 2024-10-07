@@ -14,6 +14,7 @@ emscripten
 eza
 flameshot
 fzf
+feh
 git
 grub
 grub-btrfs
