@@ -5,3 +5,6 @@ This repo stores my dotfiles for my linux setup, currently it has dotfiles for z
 Use the init.sh script to initialize your dot files. This ensures only the directories needed are symlinked and others represent the filestructure
 Make sure you have gnu stow installed before running this
 
+## pacmanfile
+pacmanfile is a system to declaratively download all the packages needed to run the system
+Once you set up the dotfiles repo, it is a good idea to install 
