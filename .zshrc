@@ -31,6 +31,7 @@ alias clock="tty-clock -Bct"
 alias ls="exa -lah"
 alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i"
 alias update="yay --noconfirm --sudoloop"
+alias zathura="devour zathura"
 
 # Keybinds
 bindkey -r '^R'
