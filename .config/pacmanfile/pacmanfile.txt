@@ -52,6 +52,7 @@ unzip
 virt-manager
 wireplumber
 xautolock
+xclip
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
