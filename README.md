@@ -6,7 +6,7 @@ Use the init.sh script to initialize your dot files. This ensures only the direc
 Make sure you have gnu stow installed before running this
 
 ### Picom
-To set up picom use [this](https://github.com/jonaburg/picom) repo here and compile it. any other fork of picom wont work with the animations
+To set up picom use [this](https://github.com/fdev31/picom) repo here and compile it. any other fork of picom wont work with the animations
 
 ## pacmanfile
 pacmanfile is a system to declaratively download all the packages needed to run the system
