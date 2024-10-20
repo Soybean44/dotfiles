@@ -36,7 +36,7 @@ obsidian
 pacmanfile
 pavucontrol
 pcmanfm
-picom
+picom-ftlabs-git
 pipewire
 pipewire-alsa
 pipewire-jack
