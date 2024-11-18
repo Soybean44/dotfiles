@@ -4,10 +4,11 @@ This script is a modified version of the script torrentcli (https://github.com/a
 it plays using peerflix which can be installed using `npm i -g peerflix`
 if the app stops working, go into the instances.json file in `get_instances()` and look for a new link that works
 """
-import requests
-import sys
-import subprocess
 import json
+import subprocess
+import sys
+
+import requests
 
 
 class bg:
@@ -85,7 +86,7 @@ def main():
 
     print(magnet)
 
-    subprocess.run([torrentStream, magnet])
+    subprocess.run([torrentStream, magnet, "-t"])
 
 
 try:
