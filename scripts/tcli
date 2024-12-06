@@ -86,7 +86,7 @@ def main():
 
     print(magnet)
 
-    subprocess.run([torrentStream, magnet, "-t"])
+    subprocess.run([torrentStream, magnet, "-t", "-l"])
 
 
 try:
