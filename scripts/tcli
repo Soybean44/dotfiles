@@ -35,9 +35,10 @@ def get_instances():
 
 
 def main():
-    if len(sys.argv) == 1:
-        sys.exit("Please rerun the command in the format: \n ~ $ tcli movie name")
-    args = sys.argv[1:].copy()
+    if len(sys.argv) <= 1:
+        args = input("Enter movie/show: ").split(" ")
+    else:
+        args = sys.argv[1:].copy()
 
     for i in args:
         if "-" in i:
