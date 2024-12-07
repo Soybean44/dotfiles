@@ -85,9 +85,13 @@ def main():
     else:
         magnet = data[x]["magnet"]
 
-    print(magnet)
+    magnet = '"' + magnet + '"'
 
-    subprocess.run([torrentStream, magnet, "-vtl"], shell=True)
+    command = " ".join([torrentStream, magnet, "-vtl"])
+
+    print(command)
+
+    subprocess.run(command, shell=True)
 
 
 try:
