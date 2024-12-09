@@ -27,6 +27,7 @@ libreoffice-fresh
 linux
 linux-firmware
 mtools
+mypy
 nano
 neovim
 networkmanager
@@ -47,6 +48,7 @@ python-lsp-server
 python-matplotlib
 python-numpy
 python-pandas
+python-pylint
 qalculate-qt
 qemu-full
 quarto-cli-bin
