@@ -1,0 +1,43 @@
+#!/bin/bash
+#---------------------------------------------------------------------#
+# Latex2Png - Soybean44
+# This script converts a latex math expression to a png format
+# Usage of the script is by running it as `sh latex2png`
+# It will run `$EDITOR "/tmp/math.tex"` and you can edit the tex file
+# Note this only works for editors that halt the terminal session untill closed
+# Then it will compile the latex document and invert the colors because dark mode rules
+# If you decide to change the colors it will complain because pdfcrop requires black and white to work
+# Finally if you wish to change the template file, just update the path of $template_file or edit the template file at the path specified
+#---------------------------------------------------------------------#
+
+# Check if the necessary packages are installed
+if ! command -v latex >/dev/null 2>&1 || ! command -v magick >/dev/null 2>&1 || ! command -v xclip >/dev/null 2>&1; then
+    echo "Error: Please install the following packages: texlive-latexextra, magick, xclip"
+    exit 1
+fi
+
+# Get the input file name
+input_file="math"
+template_file="$HOME/dotfiles/scripts/template.tex"
+
+if [ ! -f $template_file ]; then
+    echo "Error: Make sure template file exists"
+    exit 1
+fi
+
+#create math file
+cp "$template_file" "/tmp/$input_file.tex"
+$EDITOR "/tmp/$input_file.tex"
+
+# Generate the PDF file
+pushd "/tmp/"
+pdflatex "$input_file.tex"
+popd
+pdfcrop "/tmp/$input_file.pdf" "/tmp/$input_file.pdf"
+
+# Convert the PDF to PNG and copy it to the clipboard
+magick -density 300 "/tmp/$input_file.pdf" -quality 100 -flatten -sharpen 0x1.0 -channel RGB -negate -background black -alpha background -alpha off "/tmp/$input_file.png"
+xclip -selection clipboard -t image/png "/tmp/$input_file.png"
+
+echo "The PNG image has been copied to the clipboard."
+
