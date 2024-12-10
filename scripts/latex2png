@@ -36,7 +36,7 @@ popd
 pdfcrop "/tmp/$input_file.pdf" "/tmp/$input_file.pdf"
 
 # Convert the PDF to PNG and copy it to the clipboard
-magick -density 300 "/tmp/$input_file.pdf" -quality 100 -flatten -sharpen 0x1.0 -channel RGB -negate -background black -alpha background -alpha off "/tmp/$input_file.png"
+magick -density 1000 "/tmp/$input_file.pdf" -quality 1000 -flatten -sharpen 0x1.0 -channel RGB -negate -background black -alpha background -alpha off "/tmp/$input_file.png"
 xclip -selection clipboard -t image/png "/tmp/$input_file.png"
 
 echo "The PNG image has been copied to the clipboard."
