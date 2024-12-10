@@ -87,11 +87,11 @@ def main():
 
     magnet = '"' + magnet + '"'
 
-    command = " ".join([torrentStream, magnet, "-vtl"])
+    command = " ".join([torrentStream, magnet, "-tl"])
 
     print(command)
 
-    subprocess.run(command, shell=True)
+    # subprocess.run(command, shell=True)
 
 
 try:
