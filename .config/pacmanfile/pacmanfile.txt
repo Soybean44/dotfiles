@@ -67,7 +67,7 @@ texlive-mathscience
 tmux
 ttf-fira-code
 ttf-ms-fonts
-twingate
+tailscale
 udiskie
 unzip
 virt-manager
