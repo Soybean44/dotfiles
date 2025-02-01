@@ -35,10 +35,13 @@ def get_instances():
 
 
 def main():
+    outputMagnet = False
     if len(sys.argv) <= 1:
         args = input("Enter movie/show: ").split(" ")
     else:
         args = sys.argv[1:].copy()
+        if args[0] == "-m" or args[0] == "--magnet":
+            outputMagnet = True
 
     for i in args:
         if "-" in i:
@@ -89,9 +92,10 @@ def main():
 
     command = " ".join([torrentStream, magnet, "-vtl"])
 
-    print(command)
-
-    subprocess.run(command, shell=True)
+    if outputMagnet:
+        print(magnet)
+    else:
+        subprocess.run(command, shell=True)
 
 
 try:
