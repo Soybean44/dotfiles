@@ -69,10 +69,7 @@ starship
 stow
 sudo
 tailscale
-texlive-basic
-texlive-latex
-texlive-latexrecommended
-texlive-mathscience
+tectonic
 tmux
 ttf-fira-code
 ttf-ms-fonts
