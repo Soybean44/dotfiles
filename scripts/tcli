@@ -90,7 +90,7 @@ def main():
 
     magnet = '"' + magnet + '"'
 
-    command = " ".join([torrentStream, magnet, "-vtl"])
+    command = " ".join([torrentStream, magnet, "-vtlc", "1000"])
 
     if outputMagnet:
         print(magnet)

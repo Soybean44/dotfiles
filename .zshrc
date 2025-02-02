@@ -16,6 +16,9 @@ zstyle ':completion:*' rehash true
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 setopt COMPLETE_ALIASES
 
+setopt extended_glob
+setopt dot_glob
+
 # End of lines added by compinstall
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(zoxide init zsh)"
