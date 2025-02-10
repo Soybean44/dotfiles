@@ -25,3 +25,4 @@ application/xhtml+xml=zen-alpha.desktop
 application/x-fictionbook+xml=zen-alpha.desktop
 application/x-osptracker=tracker.desktop
 x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
+x-scheme-handler/beeper=beepertexts.desktop
