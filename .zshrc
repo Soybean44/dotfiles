@@ -68,6 +68,9 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# ocaml
+eval $(opam env)
+
 # init dwm on login
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then 
   startx
