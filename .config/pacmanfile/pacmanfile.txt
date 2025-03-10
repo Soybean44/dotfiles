@@ -18,6 +18,7 @@ eza
 feh
 flameshot
 fzf
+ghostty
 git
 grub
 grub-btrfs
