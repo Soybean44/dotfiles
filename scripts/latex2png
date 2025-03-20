@@ -31,7 +31,7 @@ $EDITOR "/tmp/$input_file.tex"
 
 # Generate the PDF file
 pushd "/tmp/"
-pdflatex "$input_file.tex"
+tectonic "$input_file.tex"
 popd
 pdfcrop "/tmp/$input_file.pdf" "/tmp/$input_file.pdf"
 
