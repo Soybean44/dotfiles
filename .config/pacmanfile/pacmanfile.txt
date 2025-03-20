@@ -3,7 +3,7 @@ arandr
 ark
 base
 base-devel
-beeper-latest-bin
+beeper-v4-bin
 betterdiscordctl
 brightnessctl
 btop
