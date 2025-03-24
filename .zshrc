@@ -30,7 +30,7 @@ source ~/.zprofile
 alias v="nvim"
 alias pyscratch="nvim -c ':set filetype=python'"
 alias sv="EDITOR=nvim sudo -e"
-alias clock="tty-clock -Bct"
+alias clock="tty-clock -Bcts"
 alias ls="exa -laha"
 alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i"
 alias update="yay --noconfirm --sudoloop"
