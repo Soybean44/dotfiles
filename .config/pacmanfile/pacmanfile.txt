@@ -73,6 +73,7 @@ tailscale
 tectonic
 tmux
 tree-sitter
+tree-sitter-cli
 ttf-fira-code
 ttf-ms-fonts
 udiskie
