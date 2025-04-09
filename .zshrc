@@ -28,6 +28,7 @@ source ~/.zprofile
 
 # Aliases
 alias v="nvim"
+alias notes="nvim -c 'VimwikiIndex'"
 alias pyscratch="nvim -c ':set filetype=python'"
 alias sv="EDITOR=nvim sudo -e"
 alias clock="tty-clock -Bcts"
