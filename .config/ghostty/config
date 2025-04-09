@@ -6,7 +6,6 @@
 #   /home/soybean44/.config/ghostty/config
 #
 # The template does not set any default options, since Ghostty ships
-# with sensible defaults for all options. Users should only need to set
 theme = catppuccin-mocha.conf
 background-opacity = 0.4
 gtk-titlebar = false
