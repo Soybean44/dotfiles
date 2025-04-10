@@ -27,7 +27,7 @@ fi
 
 #create math file
 cp "$template_file" "/tmp/$input_file.tex"
-$EDITOR "/tmp/$input_file.tex"
+$EDITOR +6 "/tmp/$input_file.tex"
 
 # Generate the PDF file
 pushd "/tmp/"
