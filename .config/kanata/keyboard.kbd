@@ -1,0 +1,72 @@
+(defvar
+  tap-time 100
+  hold-time 100
+)
+
+;; Only one defsrc is allowed.
+;;
+;; defsrc defines the keys that will be intercepted by kanata. The order of the
+;; keys matches with deflayer declarations and all deflayer declarations must
+;; have the same number of keys as defsrc. Any keys not listed in defsrc will
+;; be passed straight to the operating system.
+(defsrc
+  esc  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+;; The first layer defined is the layer that will be active by default when
+;; kanata starts up. 
+(deflayer qwerty 
+  @lay  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft  z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl  lmet lalt           spc            ralt rmet rctl
+)
+
+(deflayer mir
+  @lay  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab   j    o    u    r    q    f    d    l    b    g    [    ]    \
+  @caps e    a    i    n    x    y    h    t    s    c    '    ret
+  lsft  /    .    ,    z    ;    k    p    m    v    w    rsft
+  lctl  lmet lalt           spc            ralt rmet rctl
+)
+
+;; defalias is used to declare a shortcut for a more complicated action to keep
+;; the deflayer declarations clean and aligned. The alignment in deflayers is not
+;; necessary, but is strongly recommended for ease of understanding visually.
+;;
+;; Aliases are referred to by `@<alias_name>`.
+(defalias
+  ;; tap: backtick (grave), hold: toggle layer-switching layer while held
+  lay (tap-hold $tap-time $hold-time esc (layer-toggle layers))
+
+  ;; layer-switch changes the base layer.
+  mir (layer-switch mir)
+  qwr (layer-switch qwerty)
+
+  tmux (multi lctl b)
+  
+  caps (tap-hold $tap-time $hold-time caps (layer-while-held nav))
+)
+
+(deflayer layers
+  _    @qwr  @mir lrld _    _    _    _    _    _    _    _    _    _
+  _    _     _    _    _    _    _    _    _    _    _    _    _    _
+  _    _     _    _    _    _    _    _    _    _    _    _    _
+  _    _     _    _    _    _    _    _    _    _    _    _
+  _    _     _              _              _    _    _
+)
+
+
+(deflayermap (nav)
+  left @tmux
+  h left
+  j down
+  k up
+  l right
+  a @tmux
+)
