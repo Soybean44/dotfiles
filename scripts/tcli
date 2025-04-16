@@ -7,8 +7,15 @@ if the app stops working, go into the instances.json file in `get_instances()` a
 import json
 import subprocess
 import sys
+from enum import Enum
 
 import requests
+
+
+class Flags(Enum):
+    NORMAL = 1
+    MAGNET = 2
+    LIST = 3
 
 
 class bg:
@@ -35,13 +42,15 @@ def get_instances():
 
 
 def main():
-    outputMagnet = False
+    flag = Flags.NORMAL
     if len(sys.argv) <= 1:
         args = input("Enter movie/show: ").split(" ")
     else:
         args = sys.argv[1:].copy()
         if args[0] == "-m" or args[0] == "--magnet":
-            outputMagnet = True
+            flag = Flags.MAGNET
+        if args[0] == "-l" or args[0] == "--list":
+            flag = Flags.LIST
 
     for i in args:
         if "-" in i:
@@ -89,13 +98,12 @@ def main():
         magnet = data[x]["magnet"]
 
     magnet = '"' + magnet + '"'
-
-    command = " ".join([torrentStream, magnet, "-vtlc", "1000"])
-
-    if outputMagnet:
+    command = " ".join([torrentStream, magnet, "-vtc", "1000"])
+    if flag == Flags.MAGNET:
         print(magnet)
-    else:
-        subprocess.run(command, shell=True)
+    elif flag == Flags.LIST:
+        command = " ".join([torrentStream, magnet, "-vtlc", "1000"])
+    subprocess.run(command, shell=True)
 
 
 try:
