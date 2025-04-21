@@ -20,7 +20,7 @@
 ;; The first layer defined is the layer that will be active by default when
 ;; kanata starts up. 
 (deflayer qwerty 
-  @lay  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  esc   1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
   @caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft  z    x    c    v    b    n    m    ,    .    /    rsft
@@ -28,7 +28,7 @@
 )
 
 (deflayer mir
-  @lay  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  esc   1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab   j    o    u    r    q    f    d    l    b    g    [    ]    \
   @caps e    a    i    n    x    y    h    t    s    c    '    ret
   lsft  /    .    ,    z    ;    k    p    m    v    w    rsft
@@ -41,9 +41,6 @@
 ;;
 ;; Aliases are referred to by `@<alias_name>`.
 (defalias
-  ;; tap: backtick (grave), hold: toggle layer-switching layer while held
-  lay (tap-hold $tap-time $hold-time esc (layer-toggle layers))
-
   ;; layer-switch changes the base layer.
   mir (layer-switch mir)
   qwr (layer-switch qwerty)
@@ -53,15 +50,6 @@
   caps (tap-hold $tap-time $hold-time caps (layer-while-held nav))
 )
 
-(deflayer layers
-  _    @qwr  @mir lrld _    _    _    _    _    _    _    _    _    _
-  _    _     _    _    _    _    _    _    _    _    _    _    _    _
-  _    _     _    _    _    _    _    _    _    _    _    _    _
-  _    _     _    _    _    _    _    _    _    _    _    _
-  _    _     _              _              _    _    _
-)
-
-
 (deflayermap (nav)
   left @tmux
   h left
@@ -69,4 +57,7 @@
   k up
   l right
   a @tmux
+  f1 @qwr
+  f2 @mir
+  f3 lrld
 )
