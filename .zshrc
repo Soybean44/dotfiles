@@ -41,7 +41,7 @@ alias zath="zathura --fork"
 bindkey -r '^R'
 bindkey -r '^t'
 bindkey -s '^f' ';tmux-sessionizer\n'
-bindkey -s '^t' ';tmux\n'
+bindkey -s '^t' ';tmux-sessionizer $(pwd)\n'
 bindkey -s '^n' ';tmux-sessionizer new\n'
 
 export PATH="$PATH:/home/soybean44/.local/bin/"
