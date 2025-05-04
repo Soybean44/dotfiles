@@ -24,9 +24,10 @@ hydrate() {
 
 if [[ $# -eq 1 ]]; then
     if [[ $1 = "new" ]] then
-        parent_dir=$(find $search_dirs -maxdepth 1 -not -name ".git" -type d | fzf)
+        parent_dir=$(find $search_dirs -maxdepth 0 -not -name ".git" -type d | fzf)
         read -p "Directory Name: " -r dir_name
         selected="$parent_dir/$dir_name"
+        mkdir -p $selected
     else
         selected=$1
     fi
