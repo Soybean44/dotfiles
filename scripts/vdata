@@ -1,0 +1,2 @@
+#!/bin/sh
+tmux next && tmux send vd Space $1 Enter
