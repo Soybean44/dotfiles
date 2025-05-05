@@ -34,7 +34,7 @@ if [[ $# -eq 1 ]]; then
 else
     # If someone wants to make this extensible, i'll accept
     # PR
-    selected=$(find $search_dirs ~/.config -mindepth 1 -maxdepth 1 -not -name ".git" -type d | fzf)
+    selected=$(find $search_dirs -mindepth 1 -maxdepth 1 -not -name ".git" -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
