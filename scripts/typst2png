@@ -1,0 +1,37 @@
+#!/bin/bash
+#---------------------------------------------------------------------#
+# Typst - Soybean44
+# This scipt will open up $EDITOR and create and append a typst png to the clipboard
+# If you wish to change the template file, just update the path of $template_file or edit the template file at the path specified
+#---------------------------------------------------------------------#
+
+# Check if the necessary packages are installed
+if ! command -v typst >/dev/null 2>&1 || ! command -v magick >/dev/null 2>&1 || ! command -v xclip >/dev/null 2>&1; then
+    echo "Error: Please install the following packages: typst, magick, xclip"
+    exit 1
+fi
+
+# Get the input file name
+input_file="math"
+template_file="$HOME/dotfiles/scripts/template.typ"
+
+if [ ! -f $template_file ]; then
+    echo "Error: Make sure template file exists"
+    exit 1
+fi
+
+#create math file
+cp "$template_file" "/tmp/$input_file.typ"
+# Note remove the +5 if you arent using neovim
+$EDITOR +5 "/tmp/$input_file.typ"
+
+# Generate the PDF file
+pushd "/tmp/"
+typst c -f png "$input_file.typ"
+popd
+
+# Copy image to the clipboard
+xclip -selection clipboard -t image/png "/tmp/$input_file.png"
+
+echo "The PNG image has been copied to the clipboard."
+

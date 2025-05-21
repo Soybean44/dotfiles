@@ -27,6 +27,7 @@ fi
 
 #create math file
 cp "$template_file" "/tmp/$input_file.tex"
+# Note remove the +6 if you arent using neovim
 $EDITOR +6 "/tmp/$input_file.tex"
 
 # Generate the PDF file
