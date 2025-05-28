@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export TEXTBOOK_DIR=~/Documents/Textbooks
+
+/bin/ls $TEXTBOOK_DIR | grep -v "\.md" |rofi -dmenu | xargs -I {} zathura "$TEXTBOOK_DIR/{}"
+	
