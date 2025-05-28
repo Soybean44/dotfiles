@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
+NOTES_DIR="$HOME/syncthing/notes/University"
+CLASS_PATHS=$(find $NOTES_DIR -mindepth 3 -maxdepth 3 -type d)
 
-echo "hi" | rofi -dmenu
+CLASSES=""
+
+for CLASS in $CLASS_PATHS 
+do
+
+  CLASSES=$(echo $CLASSES "$(basename $CLASS)")
+done
+
+CLASS=$(echo $CLASSES | rofi -dmenu -sep " ")
+
+
