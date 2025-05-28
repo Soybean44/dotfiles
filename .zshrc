@@ -41,9 +41,11 @@ alias zath="zathura --fork"
 # Keybinds
 bindkey -r '^R'
 bindkey -r '^t'
+bindkey -r '^g'
 bindkey -s '^f' ';tmux-sessionizer\n'
 bindkey -s '^t' ';tmux-sessionizer $(pwd)\n'
 bindkey -s '^n' ';tmux-sessionizer new\n'
+bindkey -s '^g' ';lazygit\n'
 
 export PATH="$PATH:/home/soybean44/.local/bin/"
 export PATH="$PATH:/home/soybean44/dotfiles/scripts/"

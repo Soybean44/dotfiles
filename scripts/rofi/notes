@@ -1,15 +1,7 @@
 #!/usr/bin/env bash
 NOTES_DIR="$HOME/syncthing/notes/University"
-CLASS_PATHS=$(find $NOTES_DIR -mindepth 3 -maxdepth 3 -type d)
+CLASSES=$(find $NOTES_DIR -mindepth 3 -maxdepth 3 -type d | awk -F/ '{print $NF "\t" $0}')
+CLASS=$(printf "$CLASSES" | awk -F '\t' '{print $1}' | rofi -dmenu -p -"Pick a class" -i -format 'd')
+CLASS_DIR=$(printf "$CLASSES" | sed -n "${CLASS}p" | awk '{print $2}')
 
-CLASSES=""
-
-for CLASS in $CLASS_PATHS 
-do
-
-  CLASSES=$(echo $CLASSES "$(basename $CLASS)")
-done
-
-CLASS=$(echo $CLASSES | rofi -dmenu -sep " ")
-
-
+ghostty -e "tmux-sessionizer $CLASS_DIR"
