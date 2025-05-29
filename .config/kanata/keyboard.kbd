@@ -47,7 +47,7 @@
 
   tmux (multi lctl b)
   
-  caps (tap-hold $tap-time $hold-time caps (layer-while-held nav))
+  caps (tap-dance-eager 200 ((layer-while-held nav) caps))
 )
 
 (deflayermap (nav)
