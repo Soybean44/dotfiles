@@ -1,37 +1,84 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #---------------------------------------------------------------------#
-# Typst - Soybean44
+# typst2png - Soybean44
 # This scipt will open up $EDITOR and create and append a typst png to the clipboard
 # If you wish to change the template file, just update the path of $template_file or edit the template file at the path specified
 #---------------------------------------------------------------------#
 
 # Check if the necessary packages are installed
-if ! command -v typst >/dev/null 2>&1 || ! command -v magick >/dev/null 2>&1 || ! command -v xclip >/dev/null 2>&1; then
-    echo "Error: Please install the following packages: typst, magick, xclip"
+if ! command -v typst >/dev/null 2>&1 || ! command -v xclip >/dev/null 2>&1; then
+    echo "Error: Please install the following packages: typst, xclip"
     exit 1
 fi
 
 # Get the input file name
 input_file="math"
-template_file="$HOME/dotfiles/scripts/template.typ"
 
-if [ ! -f $template_file ]; then
-    echo "Error: Make sure template file exists"
+make_tmp() {
+  template_file="$HOME/dotfiles/scripts/template.typ"
+  line_num=5 # change this if you update the template
+
+  if [ ! -f $template_file ]; then
+      echo "Error: Make sure template file exists"
+      exit 1
+  fi
+
+  #create math file
+  cp "$template_file" "$input_file.typ"
+}
+
+edit_file() {
+  # Check if temp file exists
+  if [[ ! -f "$input_file.typ" ]] 
+  then
+    case $(read -p "No temporary file exists, do you want to make one [y/N]: ") in
+      y|Y|yes|Yes|YES) make_tmp ;;
+      *) exit 0 ;;
+    esac
+  fi
+
+  # Open the file and use the vi-ism to jump to correct line number
+  if [[ $EDITOR -eq vi ]] || [[ $EDITOR -eq vim ]] || [[ $EDITOR -eq nvim ]]
+  then
+    $EDITOR +$line_num "/tmp/$input_file.typ"
+  else
+    $EDITOR "/tmp/$input_file.typ"
+  fi
+}
+
+compile_and_copy() {
+  if [[ ! -f "$input_file.typ" ]] 
+  then
+    echo "No temporary file exists, please run the command without any arguments"
     exit 1
+  fi
+
+  # Generate the PNG file
+  typst c -f png "$input_file.typ"
+
+  # Copy image to the clipboard
+  xclip -selection clipboard -t image/png "$input_file.png"
+
+  echo "The PNG image has been copied to the clipboard."
+}
+
+cd "/tmp/"
+if [[ $1 == '-h' ]] || [[ $1 == '--help' ]] 
+then
+  echo "Usage: typst2png [opts]"
+  echo "  -h | --help: Shows this help screen"
+  echo "  -p | --previous: Use the previous temporary typst file if it exists"
+  echo "  -r | --recompile: Recompiles the previous file if it exists"
+  exit 0
+elif [[ $1 == '-p' ]] || [[ $1 == '--previous' ]] 
+then
+  edit_file
+  compile_and_copy 
+elif [[ $1 == '-r' ]] || [[ $1 == '--recompile' ]] 
+then
+  compile_and_copy 
+else
+  make_tmp
+  edit_file
+  compile_and_copy
 fi
-
-#create math file
-cp "$template_file" "/tmp/$input_file.typ"
-# Note remove the +5 if you arent using neovim
-$EDITOR +5 "/tmp/$input_file.typ"
-
-# Generate the PDF file
-pushd "/tmp/"
-typst c -f png "$input_file.typ"
-popd
-
-# Copy image to the clipboard
-xclip -selection clipboard -t image/png "/tmp/$input_file.png"
-
-echo "The PNG image has been copied to the clipboard."
-
