@@ -1,6 +1,7 @@
 [Added Associations]
 text/plain=org.kde.kate.desktop;
 application/zip=org.kde.ark.desktop;
+text/x-gcode-gx=guitarix.desktop;
 
 [Default Applications]
 text/plain=org.kde.kate.desktop
@@ -28,3 +29,4 @@ x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
 x-scheme-handler/beeper=beeper.desktop
 x-scheme-handler/matrix=beeper.desktop
 x-scheme-handler/element=beeper.desktop
+text/x-gcode-gx=guitarix.desktop
