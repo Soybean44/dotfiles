@@ -14,6 +14,7 @@
     enable_mouse: true,
     status_update_interval_ms: 1000,
     select_current_song_on_change: false,
+    lyrics_dir: "/home/soybean44/Music",
     album_art: (
         method: Auto,
         max_size_px: (width: 1200, height: 1200),
@@ -33,7 +34,7 @@
             "2":       SwitchToTab("Search"),
             "3":       SwitchToTab("Albums"),
             "4":       SwitchToTab("Artists"),
-            "5":       SwitchToTab("Playlists"),
+            "5":       SwitchToTab("Lyrics"),
             "6":       SwitchToTab("Directories"),
             "7":       SwitchToTab("Album Artists"),
             "q":       Quit,
@@ -135,8 +136,8 @@
         pane: Pane(Artists),
     ),
     (
-        name: "Playlists",
-        pane: Pane(Playlists),
+        name: "Lyrics",
+        pane: Pane(Lyrics),
     ),
     (
         name: "Directories",
