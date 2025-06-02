@@ -11,6 +11,7 @@ if ! command -v typst >/dev/null 2>&1 || ! command -v magick >/dev/null 2>&1 || 
     exit 1
 fi
 
+cd "/tmp/"
 input_file="math"
 
 make_file() {
@@ -24,6 +25,13 @@ make_file() {
 }
 
 edit_file() {
+  if [[ ! -f "$input_file.typ" ]]; then
+    read -p "No temp file exists, create one? [y/N]: " -r confirm
+    case $confirm in
+      y|Y|yes|Yes|YES) make_file;;
+      *) exit 0;;
+    esac
+  fi
   if [[ $EDITOR == "vi" ]] || [[ $EDITOR == "vim" ]] || [[ $EDITOR == "nvim" ]] ; then
     $EDITOR +5 "/tmp/$input_file.typ"
   else
@@ -32,8 +40,10 @@ edit_file() {
 }
 
 compile_and_copy() {
+  if [[ ! -f "$input_file.typ" ]]; then
+    exit 1
+  fi
   # Generate the PDF file
-  cd "/tmp/"
   typst c -f png "$input_file.typ"
   # Copy image to the clipboard
   xclip -selection clipboard -t image/png "$input_file.png"
@@ -41,9 +51,20 @@ compile_and_copy() {
   echo "The PNG image has been copied to the clipboard."
 }
 
-if [[ ! $1 == '-p' ]]; then
-  make_file
-elif [[ ! $1 == '-r' ]]; then
+if [[ $1 == '-h' ]] || [[ $1 == '--help' ]]; then
+  echo "Useage: typst2png [opts]"
+  echo "  -h | --help: Opens this help menu"
+  echo "  -p | --previous: Doesn't overwrite the previous tmp file, allowing for edits"
+  echo "  -r | --recompile: Recompile's the old file without editing it"
+  exit 0
+elif [[ $1 == '-p' ]] || [[ $1 == '--previous' ]]; then
   edit_file
+  compile_and_copy
+elif [[  $1 == '-r' ]] || [[ $1 == '--recompile' ]]; then
+  compile_and_copy
+else
+  make_file
+  edit_file
+  compile_and_copy
 fi
-compile_and_copy
+
