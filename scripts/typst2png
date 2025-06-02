@@ -11,27 +11,39 @@ if ! command -v typst >/dev/null 2>&1 || ! command -v magick >/dev/null 2>&1 || 
     exit 1
 fi
 
-# Get the input file name
 input_file="math"
-template_file="$HOME/dotfiles/scripts/template.typ"
 
-if [ ! -f $template_file ]; then
-    echo "Error: Make sure template file exists"
-    exit 1
+make_file() {
+  template_file="$HOME/dotfiles/scripts/template.typ"
+  if [ ! -f $template_file ]; then
+      echo "Error: Make sure template file exists"
+      exit 1
+  fi
+  #create math file
+  cp "$template_file" "/tmp/$input_file.typ"
+}
+
+edit_file() {
+  if [[ $EDITOR == "vi" ]] || [[ $EDITOR == "vim" ]] || [[ $EDITOR == "nvim" ]] ; then
+    $EDITOR +5 "/tmp/$input_file.typ"
+  else
+    $EDITOR "/tmp/$input_file.typ"
+  fi
+}
+
+compile_and_copy() {
+  # Generate the PDF file
+  cd "/tmp/"
+  typst c -f png "$input_file.typ"
+  # Copy image to the clipboard
+  xclip -selection clipboard -t image/png "$input_file.png"
+
+  echo "The PNG image has been copied to the clipboard."
+}
+
+if [[ ! $1 == '-p' ]]; then
+  make_file
+elif [[ ! $1 == '-r' ]]; then
+  edit_file
 fi
-
-#create math file
-cp "$template_file" "/tmp/$input_file.typ"
-# Note remove the +5 if you arent using neovim
-$EDITOR +5 "/tmp/$input_file.typ"
-
-# Generate the PDF file
-pushd "/tmp/"
-typst c -f png "$input_file.typ"
-popd
-
-# Copy image to the clipboard
-xclip -selection clipboard -t image/png "/tmp/$input_file.png"
-
-echo "The PNG image has been copied to the clipboard."
-
+compile_and_copy
