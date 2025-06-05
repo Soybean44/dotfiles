@@ -14,6 +14,10 @@ fi
 cd "/tmp/"
 input_file="math"
 
+prev_flag=0
+make_flag=1
+edit_flag=1
+
 make_file() {
   template_file="$HOME/dotfiles/scripts/template.typ"
   if [ ! -f $template_file ]; then
@@ -44,27 +48,65 @@ compile_and_copy() {
     exit 1
   fi
   # Generate the PDF file
-  typst c -f png "$input_file.typ"
-  # Copy image to the clipboard
-  xclip -selection clipboard -t image/png "$input_file.png"
+  typst c -f png --ppi 576 "$input_file.typ"
+  if [[ $prev_flag == 1 ]]; then
+    feh -Z "$input_file.png" &
+    feh_pid=$!
+    read -p "Do you want to make changes [y/N]: " -r confirm
+    case $confirm in
+      y|Y|yes|Yes|YES) ;;
+      *) prev_flag=0;;
+    esac
+    kill $feh_pid
+  fi
+  if [[ $prev_flag == 0 ]]; then
+    # Copy image to the clipboard
+    xclip -selection clipboard -t image/png "$input_file.png"
 
-  echo "The PNG image has been copied to the clipboard."
+    echo "The PNG image has been copied to the clipboard."
+  fi
 }
 
-if [[ $1 == '-h' ]] || [[ $1 == '--help' ]]; then
-  echo "Useage: typst2png [opts]"
-  echo "  -h | --help: Opens this help menu"
-  echo "  -p | --previous: Doesn't overwrite the previous tmp file, allowing for edits"
-  echo "  -r | --recompile: Recompile's the old file without editing it"
-  exit 0
-elif [[ $1 == '-p' ]] || [[ $1 == '--previous' ]]; then
-  edit_file
-  compile_and_copy
-elif [[  $1 == '-r' ]] || [[ $1 == '--recompile' ]]; then
-  compile_and_copy
-else
+help_dialogue() {
+
+      echo "Useage: typst2png [opts]"
+      echo "  -h: Opens this help menu"
+      echo "  -p: Doesn't overwrite the previous tmp file, allowing for edits"
+      echo "  -r: Recompile's the old file without editing it"
+      echo "  -v: Previews the file and asks you if you want to make further changes"
+      exit 0
+}
+
+while getopts 'hvpr:' OPTION; do
+  case "$OPTION" in
+    h)
+      help_dialogue
+      ;;
+    v)
+      prev_flag=1
+      ;;
+    p)
+      make_flag=0
+      ;;
+    r)
+      make_flag=0
+      edit_flag=0
+      ;;
+    ?)
+      help_dialogue
+      ;;
+  esac
+done
+shift "$(($OPTIND -1))"
+
+if [[ $make_flag == 1 ]]; then
   make_file
-  edit_file
-  compile_and_copy
 fi
 
+while true; do
+  if [[ $edit_flag == 1 ]]; then
+    edit_file
+  fi
+  compile_and_copy
+  [[ $prev_flag == 1 ]] || break
+done
