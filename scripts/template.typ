@@ -5,4 +5,3 @@
 $
 op("Insert Math Here")
 $
-.local/share/typst/packages/local/helpers/1.0.0
