@@ -70,27 +70,47 @@ compile_and_copy() {
 help_dialogue() {
 
       echo "Useage: typst2png [opts]"
-      echo "  -h: Opens this help menu"
-      echo "  -p: Doesn't overwrite the previous tmp file, allowing for edits"
-      echo "  -r: Recompile's the old file without editing it"
-      echo "  -v: Previews the file and asks you if you want to make further changes"
+      echo "  -h | --help: Opens this help menu"
+      echo "  -p | --preview: Previews the file and asks you if you want to make further changes"
+      echo "  -o | --old: Doesn't overwrite the previous tmp file, allowing for edits"
+      echo "  -r | --recompile: Recompile's the old file without editing it"
       exit 0
 }
 
-while getopts 'hvpr:' OPTION; do
+while getopts 'hpor-:' OPTION; do
   case "$OPTION" in
     h)
       help_dialogue
       ;;
-    v)
+    p)
       prev_flag=1
       ;;
-    p)
+    o)
       make_flag=0
       ;;
     r)
       make_flag=0
       edit_flag=0
+      ;;
+    -)
+      case $OPTARG in
+        help)
+          help_dialogue
+          ;;
+        preview)
+          prev_flag=1
+          ;;
+        old)
+          make_flag=0
+          ;;
+        recompile)
+          make_flag=0
+          edit_flag=0
+          ;;
+        ?)
+          help_dialogue
+          ;;
+      esac
       ;;
     ?)
       help_dialogue
