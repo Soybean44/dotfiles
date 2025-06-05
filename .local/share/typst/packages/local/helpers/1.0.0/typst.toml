@@ -1,0 +1,7 @@
+[package]
+name = "helpers"
+version = "1.0.0"
+entrypoint = "helpers.typ"
+authors = ["Sovereign Shahid"]
+license = "MIT"
+description = "Some helpers to be used in the typst2png script and other typst project I work on"

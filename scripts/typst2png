@@ -48,13 +48,13 @@ compile_and_copy() {
     exit 1
   fi
   # Generate the PDF file
-  typst c -f png --ppi 576 "$input_file.typ"
+  typst c -f png --ppi 2000 "$input_file.typ"
   if [[ $prev_flag == 1 ]]; then
-    feh -Z "$input_file.png" &
+    feh -Z. "$input_file.png" &
     feh_pid=$!
     read -p "Do you want to make changes [y/N]: " -r confirm
     case $confirm in
-      y|Y|yes|Yes|YES) ;;
+      y|Y|yes|Yes|YES) edit_flag=1;;
       *) prev_flag=0;;
     esac
     kill $feh_pid
