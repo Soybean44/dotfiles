@@ -1,0 +1,7 @@
+[user]
+	name = Sovereign Shahid
+	email = sovereignshahid@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
