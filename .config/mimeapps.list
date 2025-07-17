@@ -1,16 +1,26 @@
 [Added Associations]
 text/plain=org.kde.kate.desktop;
 application/zip=org.kde.ark.desktop;
+x-scheme-handler/http=zen.desktop;
+x-scheme-handler/https=zen.desktop;
+x-scheme-handler/chrome=zen.desktop;
+text/html=zen.desktop;
+application/x-extension-htm=zen.desktop;
+application/x-extension-html=zen.desktop;
+application/x-extension-shtml=zen.desktop;
+application/xhtml+xml=zen.desktop;
+application/x-extension-xhtml=zen.desktop;
+application/x-extension-xht=zen.desktop;
 
 [Default Applications]
 text/plain=org.kde.kate.desktop
 x-scheme-handler/discord-424004941485572097=discord-424004941485572097.desktop
-x-scheme-handler/http=zen-alpha.desktop
-x-scheme-handler/https=zen-alpha.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
 inode/directory=pcmanfm.desktop
 application/zip=org.kde.ark.desktop
 text/vnd.trolltech.linguist=zen-alpha.desktop
-text/html=zen-alpha.desktop
+text/html=zen.desktop
 application/smil+xml=zen-alpha.desktop
 application/xml=zen-alpha.desktop
 application/x-xpinstall=zen-alpha.desktop
@@ -21,10 +31,16 @@ application/x-ipynb+json=zen-alpha.desktop
 application/pdf=zen-alpha.desktop
 application/x-designer=zen-alpha.desktop
 application/xspf+xml=zen-alpha.desktop
-application/xhtml+xml=zen-alpha.desktop
+application/xhtml+xml=zen.desktop
 application/x-fictionbook+xml=zen-alpha.desktop
 application/x-osptracker=tracker.desktop
 x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
 x-scheme-handler/beeper=beeper.desktop
 x-scheme-handler/matrix=beeper.desktop
 x-scheme-handler/element=beeper.desktop
+x-scheme-handler/chrome=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/x-extension-xht=zen.desktop
