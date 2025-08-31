@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+asusctl profile -l | tail -n 3 | rofi -dmenu | xargs -0 asusctl profile -P
