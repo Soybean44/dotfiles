@@ -43,10 +43,12 @@ alias e="msedit"
 bindkey -r '^R'
 bindkey -r '^t'
 bindkey -r '^g'
-bindkey -s '^f' ';tmux-sessionizer\n'
-bindkey -s '^t' ';tmux-sessionizer $(pwd)\n'
-bindkey -s '^n' ';tmux-sessionizer new\n'
-bindkey -s '^g' ';lazygit\n'
+bindkey -r '^o'
+bindkey -s '^f' '^utmux-sessionizer\n' 
+bindkey -s '^t' '^utmux-sessionizer $(pwd)\n'
+bindkey -s '^n' '^utmux-sessionizer new\n'
+bindkey -s '^g' '^ulazygit\n'
+bindkey -s '^o' '^ufg\n'
 
 export PATH="$PATH:/home/soybean44/.local/bin/"
 export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
