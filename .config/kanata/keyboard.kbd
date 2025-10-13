@@ -24,7 +24,7 @@
   tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
   @caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft  z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl  lmet lalt           spc            ralt rmet rctl
+  lctl  lmet lalt           spc            ralt rmet @nav
 )
 
 (deflayer mir
@@ -32,7 +32,7 @@
   tab   j    o    u    r    q    f    d    l    b    g    [    ]    \
   @caps e    a    i    n    x    y    h    t    s    c    '    ret
   lsft  /    .    ,    z    ;    k    p    m    v    w    rsft
-  lctl  lmet lalt           spc            ralt rmet rctl
+  lctl  lmet lalt           spc            ralt rmet @nav
 )
 
 ;; defalias is used to declare a shortcut for a more complicated action to keep
@@ -44,6 +44,7 @@
   ;; layer-switch changes the base layer.
   mir (layer-switch mir)
   qwr (layer-switch qwerty)
+  nav (layer-while-held nav)
 
   tmux (multi lctl b)
   
@@ -61,3 +62,4 @@
   f2 @mir
   f3 lrld
 )
+
