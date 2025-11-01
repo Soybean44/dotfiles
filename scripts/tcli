@@ -8,6 +8,7 @@ import json
 import subprocess
 import sys
 from enum import Enum
+import random
 
 import requests
 
@@ -55,14 +56,21 @@ def main():
     for i in args:
         if "-" in i:
             args.remove(i)
+
     search = ("+".join(args)).replace(" ", "+")
-    # sites = ["librex.extravi.dev", "librex.beparanoid.de", "search.davidovski.xyz", "search.funami.tech", "search.madreyk.xyz", "librex.catalyst.sx"]
-    # sites = get_instances()
-    # site = random.choice(sites)
-    site = "https://ly.owo.si/"
-    URL = f"{site}api.php?q={search}&p=0&t=3"
-    data = requests.get(url=URL)
-    data = data.json()
+    sites = get_instances()
+    data = None
+
+    while True:
+        site = random.choice(sites)
+        URL = f"{site}api.php?q={search}&p=0&t=3"
+        # for debug print(f"Trying {site}")
+        try:
+            data = requests.get(url=URL)
+            data = data.json()
+            break
+        except:
+            pass
 
     numberOfOutputs = 8
     torrentStream = "peerflix"

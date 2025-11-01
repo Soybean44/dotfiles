@@ -50,7 +50,7 @@ bindkey -s '^n' '^utmux-sessionizer new\n'
 bindkey -s '^g' '^ulazygit\n'
 bindkey -s '^o' '^ufg\n'
 
-export PATH="$PATH:/home/soybean44/.local/bin/"
+export PATH="$PATH:/home/soybean44/.local/bin/:/home/soybean44/matlab/bin"
 export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
 export PATH="$PATH:/home/soybean44/.cargo/bin/"
 export PATH="$PATH:/home/soybean44/Programs/zig/"
