@@ -12,7 +12,7 @@ import random
 
 import requests
 
-PEERFLIX_ARGS = ["-c", "1000"]
+PEERFLIX_ARGS = ["-kc", "1000"]
 
 class bg:
     PINK = "\033[95m"
