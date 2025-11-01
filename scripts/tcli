@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
 This script is a modified version of the script torrentcli (https://github.com/amogusussy/torrentCLI/blob/main/torrentcli)
-it plays using peerflix which can be installed using `npm i -g peerflix`
-if the app stops working, go into the instances.json file in `get_instances()` and look for a new link that works
+it plays using peerflix which can be installed using `npm i -g peerflix`, args can be modified through the peerflix args constant
+By default it uses the Libre Y instance found in the `TCLI_SOURCE` env variable, but if you need more instances the -s flag gives you a few
 """
 import json
 import subprocess
@@ -11,6 +11,8 @@ import argparse
 import random
 
 import requests
+
+PEERFLIX_ARGS = ["-c", "1000"]
 
 class bg:
     PINK = "\033[95m"
@@ -36,13 +38,13 @@ def get_instances():
 
 
 def main():
-    parser = argparse.ArgumentParser(description='A cli app to search and stream torrents')
+    parser = argparse.ArgumentParser(description='A cli app to search and stream torrents, read the comment at the top of the file for more info')
     parser.add_argument('movie', type=str, nargs='*', help='Movie name')
     parser.add_argument('-m', '--magnet', action='store_true', help='Only print magnet link')
     parser.add_argument('-s', '--source', action='store_true', help='Choose Libre Y source')
     args = parser.parse_args()
 
-    search = args.movie if args.movie else input("Enter movie/show: ")
+    search = "%20".join(args.movie) if args.movie else input("Enter movie/show: ").replace(" ", "%20")
 
     site =  os.environ['TCLI_SOURCE'] if 'TCLI_SOURCE' in os.environ else None
     if args.source or site is None:
@@ -89,7 +91,7 @@ def main():
         magnet = data[x]["magnet"]
 
     magnet = '"' + magnet + '"'
-    command = " ".join([torrentStream, magnet, "-tc", "1000"])
+    command = " ".join([torrentStream, magnet] + PEERFLIX_ARGS)
     if args.magnet:
         print(magnet)
         exit()
