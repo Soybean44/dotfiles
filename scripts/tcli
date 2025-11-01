@@ -12,7 +12,7 @@ import random
 
 import requests
 
-PEERFLIX_ARGS = ["-kt"]
+PEERFLIX_ARGS = ["-v"]
 
 class bg:
     PINK = "\033[95m"
@@ -91,17 +91,12 @@ def main():
     else:
         magnet = data[x]["magnet"]
 
-    movie = data[x]['name']
-    command = f"subliminal download -fl en -d /tmp '{movie}'"
-    subprocess.run(command, shell=True)
-
     magnet = '"' + magnet + '"'
-    command = " ".join([torrentStream, magnet] + PEERFLIX_ARGS + [f"'/tmp/{movie}.en.srt'"])
+    command = " ".join([torrentStream, magnet] + PEERFLIX_ARGS)
     if args.magnet:
         print(magnet)
         exit()
     subprocess.run(command, shell=True)
-    print(command)
 
 
 try:
