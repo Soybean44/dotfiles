@@ -12,7 +12,7 @@ import random
 
 import requests
 
-PEERFLIX_ARGS = ["-kc", "1000"]
+PEERFLIX_ARGS = ["-kt"]
 
 class bg:
     PINK = "\033[95m"
@@ -44,7 +44,8 @@ def main():
     parser.add_argument('-s', '--source', action='store_true', help='Choose Libre Y source')
     args = parser.parse_args()
 
-    search = "%20".join(args.movie) if args.movie else input("Enter movie/show: ").replace(" ", "%20")
+    movie = " ".join(args.movie) if args.movie else input("Enter movie/show: ")
+    search = movie.replace(" ", "%20")
 
     site =  os.environ['TCLI_SOURCE'] if 'TCLI_SOURCE' in os.environ else None
     if args.source or site is None:
@@ -90,12 +91,17 @@ def main():
     else:
         magnet = data[x]["magnet"]
 
+    movie = data[x]['name']
+    command = f"subliminal download -fl en -d /tmp '{movie}'"
+    subprocess.run(command, shell=True)
+
     magnet = '"' + magnet + '"'
-    command = " ".join([torrentStream, magnet] + PEERFLIX_ARGS)
+    command = " ".join([torrentStream, magnet] + PEERFLIX_ARGS + [f"'/tmp/{movie}.en.srt'"])
     if args.magnet:
         print(magnet)
         exit()
     subprocess.run(command, shell=True)
+    print(command)
 
 
 try:
