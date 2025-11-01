@@ -6,18 +6,11 @@ if the app stops working, go into the instances.json file in `get_instances()` a
 """
 import json
 import subprocess
-import sys
-from enum import Enum
+import os
+import argparse
 import random
 
 import requests
-
-
-class Flags(Enum):
-    NORMAL = 1
-    MAGNET = 2
-    LIST = 3
-
 
 class bg:
     PINK = "\033[95m"
@@ -43,34 +36,24 @@ def get_instances():
 
 
 def main():
-    flag = Flags.NORMAL
-    if len(sys.argv) <= 1:
-        args = input("Enter movie/show: ").split(" ")
-    else:
-        args = sys.argv[1:].copy()
-        if args[0] == "-m" or args[0] == "--magnet":
-            flag = Flags.MAGNET
-        if args[0] == "-l" or args[0] == "--list":
-            flag = Flags.LIST
+    parser = argparse.ArgumentParser(description='A cli app to search and stream torrents')
+    parser.add_argument('movie', type=str, nargs='*', help='Movie name')
+    parser.add_argument('-m', '--magnet', action='store_true', help='Only print magnet link')
+    parser.add_argument('-s', '--source', action='store_true', help='Choose Libre Y source')
+    args = parser.parse_args()
 
-    for i in args:
-        if "-" in i:
-            args.remove(i)
+    search = args.movie if args.movie else input("Enter movie/show: ")
 
-    search = ("+".join(args)).replace(" ", "+")
-    sites = get_instances()
-    data = None
-
-    while True:
-        site = random.choice(sites)
-        URL = f"{site}api.php?q={search}&p=0&t=3"
-        # for debug print(f"Trying {site}")
-        try:
-            data = requests.get(url=URL)
-            data = data.json()
-            break
-        except:
-            pass
+    site =  os.environ['TCLI_SOURCE'] if 'TCLI_SOURCE' in os.environ else None
+    if args.source or site is None:
+        sites = get_instances()
+        print("Choose source: ")
+        for i, s in enumerate(sites):
+            print(f"  {i}: {s}")
+        site = sites[int(input("> "))]
+    URL = f"{site}api.php?q={search}&p=0&t=3"
+    data = requests.get(url=URL)
+    data = data.json()
 
     numberOfOutputs = 8
     torrentStream = "peerflix"
@@ -106,11 +89,10 @@ def main():
         magnet = data[x]["magnet"]
 
     magnet = '"' + magnet + '"'
-    command = " ".join([torrentStream, magnet, "-vtc", "1000"])
-    if flag == Flags.MAGNET:
+    command = " ".join([torrentStream, magnet, "-tc", "1000"])
+    if args.magnet:
         print(magnet)
-    elif flag == Flags.LIST:
-        command = " ".join([torrentStream, magnet, "-vtlc", "1000"])
+        exit()
     subprocess.run(command, shell=True)
 
 

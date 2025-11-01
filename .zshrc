@@ -62,6 +62,7 @@ export EDITOR=nvim
 export RESTART_XOCHITL_DEFAULT=1
 export GOPATH="/home/soybean44/go"
 export MODULAR_HOME="/home/soybean44/.modular"
+export TCLI_SOURCE="https://librey.darkness.services/"
 
 # XDG Compliance
 export XDG_CONFIG_HOME="$HOME/.config"
