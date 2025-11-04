@@ -1,0 +1,41 @@
+// Some example tasks for common languages.
+//
+// For more documentation on how to configure debug tasks,
+// see: https://zed.dev/docs/debugger
+[
+  {
+    "label": "Debug Zig file",
+    "adapter": "CodeLLDB",
+    "request": "launch",
+    "program": "$ZED_WORKTREE_ROOT/zig-out/bin/zig_compiler",
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Debug active PHP file",
+    "adapter": "PHP",
+    "program": "$ZED_FILE",
+    "request": "launch",
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Debug active Python file",
+    "adapter": "Debugpy",
+    "program": "$ZED_FILE",
+    "request": "launch",
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Debug active JavaScript file",
+    "adapter": "JavaScript",
+    "program": "$ZED_FILE",
+    "request": "launch",
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "JavaScript debug terminal",
+    "adapter": "JavaScript",
+    "request": "launch",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "console": "integratedTerminal"
+  }
+]
