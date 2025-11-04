@@ -37,7 +37,11 @@ alias ls="exa -laha"
 alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i"
 alias update="yay --noconfirm --sudoloop"
 alias zath="zathura --fork"
-alias e="msedit"
+
+# Functions
+graph_csv() {
+  gnuplot --persist -e "set datafile separator ','; plot '$1' using 1:2 with lines"
+}
 
 # Keybinds
 bindkey -r '^R'
@@ -49,6 +53,7 @@ bindkey -s '^t' '^utmux-sessionizer $(pwd)\n'
 bindkey -s '^n' '^utmux-sessionizer new\n'
 bindkey -s '^g' '^ulazygit\n'
 bindkey -s '^o' '^ufg\n'
+
 
 export PATH="$PATH:/home/soybean44/.local/bin/:/home/soybean44/matlab/bin"
 export PATH="$PATH:/home/soybean44/dotfiles/scripts/"
