@@ -90,12 +90,7 @@ function y() {
 
 # init dwm on login
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then 
-  if [[ $HOST = soybean-gaming ]]; then
-    hyprpm reload -n
-    hyprland
-  else
-    startx
-  fi
+  startx
 fi
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib/mojo
 
