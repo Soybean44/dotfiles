@@ -52,14 +52,22 @@
 )
 
 (deflayermap (nav)
-  left @tmux
   h left
   j down
   k up
   l right
-  a @tmux
   f1 @qwr
   f2 @mir
   f3 lrld
+  lalt 0
+  z 1
+  x 2
+  c 3
+  a 4
+  s 5
+  d 6
+  q 7
+  w 8
+  e 9
 )
 
