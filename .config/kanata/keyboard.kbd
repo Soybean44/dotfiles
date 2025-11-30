@@ -64,10 +64,14 @@
   x 2
   c 3
   a 4
+  left 4
   s 5
+  down 5
   d 6
+  right 6
   q 7
   w 8
+  up 8
   e 9
 )
 
