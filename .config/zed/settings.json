@@ -7,6 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "context7_api_key": "ctx7sk-dfff02da-2954-4920-9870-9c48e34d995c"
+      }
+    }
+  },
   "agent": {
     "use_modifier_to_send": true,
     "always_allow_tool_actions": true,
@@ -18,7 +27,7 @@
     },
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
+      "model": "gpt-5.3-codex"
     },
     "model_parameters": []
   },
