@@ -31,12 +31,13 @@
             "<Tab>":   NextTab,
             "<S-Tab>": PreviousTab,
             "1":       SwitchToTab("Queue"),
-            "2":       SwitchToTab("Lyrics"),
-            "3":       SwitchToTab("Albums"),
-            "4":       SwitchToTab("Artists"),
-            "5":       SwitchToTab("Search"),
-            "6":       SwitchToTab("Directories"),
-            "7":       SwitchToTab("Album Artists"),
+            "2":       SwitchToTab("Zen Mode"),
+            "3":       SwitchToTab("Lyrics"),
+            "4":       SwitchToTab("Albums"),
+            "5":       SwitchToTab("Artists"),
+            "6":       SwitchToTab("Search"),
+            //"7":       SwitchToTab("Directories"),
+            //"8":       SwitchToTab("Album Artists"),
             "q":       Quit,
             ">":       NextTrack,
             "p":       TogglePause,
@@ -124,6 +125,10 @@
 
     ),
     (
+        name: "Zen Mode",
+        pane: Pane(AlbumArt),
+    ),
+    (
         name: "Lyrics",
         pane: Pane(Lyrics),
     ),
@@ -139,14 +144,14 @@
         name: "Search",
         pane: Pane(Search),
     ),
-    (
-        name: "Directories",
-        pane: Pane(Directories),
-    ),
-    (
-        name: "Album Artists",
-        pane: Pane(AlbumArtists),
-    ),
+    //(
+    //    name: "Directories",
+    //    pane: Pane(Directories),
+    //),
+    //(
+    //    name: "Album Artists",
+    //    pane: Pane(AlbumArtists),
+    //),
 ],
 )
 
