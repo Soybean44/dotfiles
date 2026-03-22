@@ -35,10 +35,17 @@ alias sv="EDITOR=nvim sudo -e"
 alias clock="tty-clock -Bcts"
 alias ls="exa -laha"
 alias screenshot="sleep 1s; maim -s | xclip -selection clipboard -t image/png -i"
-alias update="yay --noconfirm --sudoloop"
 alias zath="zathura --fork"
 
 # Functions
+update() {
+  sudo pacman -Syu --noconfirm
+  notify-send "Finished system updates: 
+  Now updating AUR packages" 
+  yay --noconfirm --sudoloop
+  notify-send "Finished AUR updates:
+  Updates are complete, reboot system if possible"
+}
 graph_csv() {
   gnuplot --persist -e "set datafile separator ','; plot '$1' using 1:2 with lines"
 }
