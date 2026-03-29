@@ -71,7 +71,7 @@ export PATH="$PATH:/home/soybean44/.local/share/envision/prefixes/efded882-eeeb-
 export PATH=$PATH:~/.modular/pkg/packages.modular.com_mojo/bin/
 
 export EDITOR=nvim
-export MANPAGER="nvim + Man!"
+export MANPAGER='nvim +Man!'
 export RESTART_XOCHITL_DEFAULT=1
 export GOPATH="/home/soybean44/go"
 export MODULAR_HOME="/home/soybean44/.modular"
