@@ -29,6 +29,7 @@ source ~/.zprofile
 
 # Aliases
 alias v="nvim"
+alias vi="nvim -u ~/.config/nvim/minimal.lua" # minimal config
 alias notes="nvim -c 'VimwikiIndex'"
 alias pyscratch="nvim -c ':set filetype=python'"
 alias sv="EDITOR=nvim sudo -e"
