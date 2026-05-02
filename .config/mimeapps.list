@@ -12,6 +12,7 @@ text/plain=org.kde.kate.desktop;
 x-scheme-handler/chrome=zen.desktop;
 x-scheme-handler/http=zen.desktop;
 x-scheme-handler/https=zen.desktop;
+x-scheme-handler/nxm=wine-Programs-Black Tree Gaming Ltd-Vortex.desktop;wine-Programs-Mod Organizer-Mod Organizer.desktop;
 
 [Default Applications]
 application/json=zen-alpha.desktop
@@ -46,3 +47,4 @@ x-scheme-handler/element=beeper.desktop
 x-scheme-handler/http=zen.desktop
 x-scheme-handler/https=zen.desktop
 x-scheme-handler/matrix=beeper.desktop
+x-scheme-handler/nxm=wine-Programs-Black Tree Gaming Ltd-Vortex.desktop;

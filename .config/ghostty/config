@@ -8,5 +8,7 @@
 # The template does not set any default options, since Ghostty ships
 theme = catppuccin-mocha.conf
 background-opacity = 0.4
+background-blur = true
 gtk-titlebar = false
-font-family = ComicShannsMonoNerdFont
+font-family = ComicShannsMonoNerdFont 
+font-codepoint-map = U+F1900-U+F19FF=Fairfax HD
