@@ -1,6 +1,6 @@
 #!/bin/sh
 
-search_dirs="$(find ~/code -mindepth 1 -maxdepth 1) $(find ~/syncthing/uni -mindepth 3 -maxdepth 3)"
+search_dirs="$(find ~/Projects/code -mindepth 1 -maxdepth 1) $(find ~/syncthing/uni -mindepth 3 -maxdepth 3)"
 
 switch_to() {
     if [[ -z $TMUX ]]; then
