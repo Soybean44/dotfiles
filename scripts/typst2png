@@ -6,10 +6,24 @@
 #---------------------------------------------------------------------#
 
 # Check if the necessary packages are installed
-if ! command -v typst >/dev/null 2>&1 || ! command -v magick >/dev/null 2>&1 || ! command -v xclip >/dev/null 2>&1; then
-    echo "Error: Please install the following packages: typst, magick, xclip"
+if ! command -v typst >/dev/null 2>&1; then 
+    echo "Error: Please install typst"
     exit 1
 fi
+
+if ! command -v magick >/dev/null 2>&1; then 
+    echo "Error: Please install imagemagick"
+    exit 1
+fi
+
+if [[ $XDG_SESSION_TYPE == "wayland" ]] & ! command -v wl-copy >/dev/null 2>&1; then 
+    echo "Error: Please install wl-clipboard"
+    exit 1
+elif ! command -v xclip >/dev/null 2>&1; then
+    echo "Error: Please install wl-clipboard"
+    exit 1
+fi
+
 
 cd "/tmp/"
 input_file="math"
@@ -20,7 +34,7 @@ edit_flag=1
 
 make_file() {
   template_file="$HOME/dotfiles/scripts/template.typ"
-  if [ ! -f $template_file ]; then
+  if [[ ! -f $template_file ]]; then
       echo "Error: Make sure template file exists"
       exit 1
   fi
@@ -61,7 +75,11 @@ compile_and_copy() {
   fi
   if [[ $prev_flag == 0 ]]; then
     # Copy image to the clipboard
-    xclip -selection clipboard -t image/png "$input_file.png"
+    if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+      wl-copy < "$input_file.png"
+    else
+      xclip -selection clipboard -t image/png "$input_file.png"
+    fi
 
     echo "The PNG image has been copied to the clipboard."
   fi
