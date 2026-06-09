@@ -15,12 +15,16 @@ if ! command -v magick >/dev/null 2>&1; then
     echo "Error: Please install imagemagick"
     exit 1
 fi
+if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+    echo "Error: Beans"
+    exit 1
+fi
 
-if [[ $XDG_SESSION_TYPE == "wayland" ]] & ! command -v wl-copy >/dev/null 2>&1; then 
+if [[ $XDG_SESSION_TYPE == "wayland" ]] && !command -v wl-copy >/dev/null 2>&1; then 
     echo "Error: Please install wl-clipboard"
     exit 1
 elif ! command -v xclip >/dev/null 2>&1; then
-    echo "Error: Please install wl-clipboard"
+    echo "Error: Please install xclip"
     exit 1
 fi
 
@@ -28,7 +32,7 @@ fi
 cd "/tmp/"
 input_file="math"
 
-prev_flag=0
+prev_flag=1
 make_flag=1
 edit_flag=1
 
@@ -89,7 +93,7 @@ help_dialogue() {
 
       echo "Useage: typst2png [opts]"
       echo "  -h | --help: Opens this help menu"
-      echo "  -p | --preview: Previews the file and asks you if you want to make further changes"
+      echo "  -q | --quiet: Quiets the preview dialog"
       echo "  -o | --old: Doesn't overwrite the previous tmp file, allowing for edits"
       echo "  -r | --recompile: Recompile's the old file without editing it"
       exit 0
@@ -100,8 +104,8 @@ while getopts 'hpor-:' OPTION; do
     h)
       help_dialogue
       ;;
-    p)
-      prev_flag=1
+    q)
+      prev_flag=0
       ;;
     o)
       make_flag=0
@@ -115,8 +119,8 @@ while getopts 'hpor-:' OPTION; do
         help)
           help_dialogue
           ;;
-        preview)
-          prev_flag=1
+        quiet)
+          prev_flag=0
           ;;
         old)
           make_flag=0
