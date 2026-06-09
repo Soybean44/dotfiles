@@ -104,3 +104,8 @@ fi
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib/mojo
 
 . "$HOME/.local/bin/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/soybean44/.lmstudio/bin"
+# End of LM Studio CLI section
+
