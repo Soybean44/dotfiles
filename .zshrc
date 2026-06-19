@@ -76,7 +76,7 @@ export MANPAGER='nvim +Man!'
 export RESTART_XOCHITL_DEFAULT=1
 export GOPATH="/home/soybean44/go"
 export MODULAR_HOME="/home/soybean44/.modular"
-export TCLI_SOURCE="https://librey.darkness.services/"
+export TCLI_SOURCE="http://soybean-server:8080/"
 
 # XDG Compliance
 export XDG_CONFIG_HOME="$HOME/.config"
