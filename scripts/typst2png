@@ -51,7 +51,7 @@ edit_file() {
     esac
   fi
   if [[ $EDITOR == "vi" ]] || [[ $EDITOR == "vim" ]] || [[ $EDITOR == "nvim" ]] ; then
-    $EDITOR +5 "/tmp/$input_file.typ"
+    $EDITOR +6 "/tmp/$input_file.typ"
   else
     $EDITOR "/tmp/$input_file.typ"
   fi
