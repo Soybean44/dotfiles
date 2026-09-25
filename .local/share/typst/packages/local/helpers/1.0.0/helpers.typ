@@ -2,6 +2,8 @@
 #let ket(x) = $| #x chevron.r$
 #let braket(x,y) = $chevron.l #x | #y chevron.r$
 
+#let mumeter = $thin "μm"$
+
 #let genmat(n,m,f) = $mat(..#range(0,n).map(i => range(0,m).map(j => f(i,j))))$
 
 #let catppucin_color(name) = {
